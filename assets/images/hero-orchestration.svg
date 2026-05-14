@@ -1,0 +1,45 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#0B1527"/>
+  <rect x="32" y="32" width="1136" height="696" rx="28" stroke="rgba(199,221,255,0.16)"/>
+  <circle cx="600" cy="380" r="118" fill="#101E34" stroke="#81B5FF" stroke-width="2"/>
+  <circle cx="600" cy="380" r="78" fill="#13233C"/>
+  <text x="600" y="362" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">Agentix</text>
+  <text x="600" y="398" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">strategy + execution</text>
+
+  <g>
+    <line x1="600" y1="262" x2="600" y2="164" stroke="#C89A67" stroke-width="2"/>
+    <rect x="484" y="84" width="232" height="92" rx="18" fill="#111D31" stroke="#C89A67"/>
+    <text x="600" y="126" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Customer Experience</text>
+    <text x="600" y="152" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">journeys • channels • service design</text>
+  </g>
+
+  <g>
+    <line x1="680" y1="300" x2="828" y2="222" stroke="#81B5FF" stroke-width="2"/>
+    <rect x="818" y="160" width="260" height="100" rx="18" fill="#111D31" stroke="#81B5FF"/>
+    <text x="948" y="203" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Collaboration</text>
+    <text x="948" y="229" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">communications • rollout • governance</text>
+  </g>
+
+  <g>
+    <line x1="704" y1="430" x2="852" y2="494" stroke="#81B5FF" stroke-width="2"/>
+    <rect x="820" y="474" width="258" height="98" rx="18" fill="#111D31" stroke="#81B5FF"/>
+    <text x="949" y="516" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">AI Operations</text>
+    <text x="949" y="542" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">agents • automation • governance</text>
+  </g>
+
+  <g>
+    <line x1="520" y1="430" x2="372" y2="494" stroke="#81B5FF" stroke-width="2"/>
+    <rect x="124" y="474" width="258" height="98" rx="18" fill="#111D31" stroke="#81B5FF"/>
+    <text x="253" y="516" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">CRM</text>
+    <text x="253" y="542" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">architecture • workflows • adoption</text>
+  </g>
+
+  <g>
+    <line x1="520" y1="300" x2="372" y2="222" stroke="#81B5FF" stroke-width="2"/>
+    <rect x="124" y="160" width="258" height="100" rx="18" fill="#111D31" stroke="#81B5FF"/>
+    <text x="253" y="203" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">ITSM</text>
+    <text x="253" y="229" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">service ops • workflow modernization</text>
+  </g>
+
+  <text x="70" y="690" fill="#C7DDFF" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">PLACEHOLDER DIAGRAM</text>
+</svg>

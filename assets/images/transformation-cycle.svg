@@ -1,0 +1,31 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#0B1527"/>
+  <circle cx="600" cy="380" r="224" fill="#0F1A2C" stroke="rgba(199,221,255,0.14)"/>
+  <circle cx="600" cy="380" r="140" fill="#13233C"/>
+  <text x="600" y="372" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Transformation</text>
+  <text x="600" y="410" fill="#A9B6D2" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">continuous cycle</text>
+
+  <g>
+    <circle cx="600" cy="124" r="72" fill="#111D31" stroke="#81B5FF" stroke-width="2"/>
+    <text x="600" y="132" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Assess</text>
+  </g>
+  <g>
+    <circle cx="856" cy="380" r="72" fill="#111D31" stroke="#81B5FF" stroke-width="2"/>
+    <text x="856" y="388" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Design</text>
+  </g>
+  <g>
+    <circle cx="600" cy="636" r="72" fill="#111D31" stroke="#C89A67" stroke-width="2"/>
+    <text x="600" y="644" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Implement</text>
+  </g>
+  <g>
+    <circle cx="344" cy="380" r="72" fill="#111D31" stroke="#C89A67" stroke-width="2"/>
+    <text x="344" y="388" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Optimize</text>
+  </g>
+
+  <path d="M600 200C720 200 780 260 780 380" stroke="#81B5FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M780 380C780 500 720 560 600 560" stroke="#C89A67" stroke-width="3" stroke-linecap="round"/>
+  <path d="M600 560C480 560 420 500 420 380" stroke="#81B5FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M420 380C420 260 480 200 600 200" stroke="#C89A67" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="72" y="708" fill="#C7DDFF" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">ENGAGEMENT DIAGRAM PLACEHOLDER</text>
+</svg>
