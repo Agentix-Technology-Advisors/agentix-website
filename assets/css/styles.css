@@ -466,6 +466,18 @@ span {
   object-fit: cover;
 }
 
+.showcase-layout .visual-panel,
+.engagement-visual-grid .visual-panel {
+  height: 100%;
+}
+
+.showcase-layout .visual-panel img,
+.engagement-visual-grid .visual-panel img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .hero-actions,
 .cta-panel__actions {
   display: flex;
