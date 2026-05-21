@@ -1575,6 +1575,17 @@ main>.section-block:first-of-type {
   }
 
   .service-stage-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
+    gap: 1rem 1.25rem;
+  }
+
+  .service-stage-visual {
+    max-width: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-stage-layout {
     grid-template-columns: 1fr;
     gap: 0.85rem;
   }
