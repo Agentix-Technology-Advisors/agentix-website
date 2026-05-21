@@ -1306,9 +1306,7 @@ main>.section-block:first-of-type {
   padding: 0.5rem 0.75rem;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.96),
-      rgba(242, 247, 255, 0.92));
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1318,8 +1316,18 @@ main>.section-block:first-of-type {
 .about-tech-logo img {
   display: block;
   width: 100%;
-  height: 40px;
+  height: 42px;
   object-fit: contain;
+}
+
+.about-tech-logo__img--dialpad {
+  transform: scale(1.18);
+  transform-origin: center;
+}
+
+.about-tech-logo__img--zoom {
+  transform: scale(0.9);
+  transform-origin: center;
 }
 
 /* Leadership bio cards */
