@@ -587,11 +587,14 @@ li {
 }
 
 .engagement-visual-grid .visual-panel {
-  max-height: 390px;
+  height: 100%;
+  max-height: none;
+  align-self: stretch;
 }
 
 .engagement-visual-grid .visual-panel img {
-  aspect-ratio: 16 / 10;
+  height: 100%;
+  aspect-ratio: auto;
 }
 
 .visual-panel--engagement {
@@ -703,7 +706,7 @@ main>.section-block:first-of-type {
   display: grid;
   grid-template-columns: minmax(260px, 0.88fr) minmax(340px, 1.12fr);
   gap: 1.25rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .service-chip-grid,
