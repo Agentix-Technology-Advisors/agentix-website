@@ -1,0 +1,44 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="116" y1="44" x2="1276" y2="838" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1730"/>
+      <stop offset="1" stop-color="#142649"/>
+    </linearGradient>
+    <radialGradient id="pink2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 250) rotate(128) scale(470 400)">
+      <stop stop-color="#FF74AE" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#FF74AE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line2" x1="264" y1="450" x2="1124" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#98EEFF"/>
+      <stop offset="0.52" stop-color="#F6A7CC"/>
+      <stop offset="1" stop-color="#B3C2FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="900" rx="34" fill="url(#bg2)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#pink2)"/>
+
+  <rect x="220" y="220" width="960" height="460" rx="30" fill="#0E1C37" fill-opacity="0.58" stroke="#D4E9FF" stroke-opacity="0.24"/>
+
+  <g opacity="0.32" stroke="#CFE7FF" stroke-width="1.4">
+    <path d="M280 300H1120"/>
+    <path d="M280 450H1120"/>
+    <path d="M280 600H1120"/>
+  </g>
+
+  <g fill="#13264A" stroke="#9DEFFF" stroke-opacity="0.6" stroke-width="2">
+    <rect x="320" y="356" width="160" height="188" rx="16"/>
+    <rect x="560" y="330" width="220" height="240" rx="20" stroke="#F6A7CC" stroke-opacity="0.66"/>
+    <rect x="860" y="286" width="200" height="328" rx="20"/>
+  </g>
+
+  <path d="M420 450H860" stroke="url(#line2)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M486 372L560 450L486 528" stroke="#D9E8FF" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M786 356L860 450L786 544" stroke="#F6A7CC" stroke-width="2.4" stroke-linecap="round"/>
+
+  <g fill="#FFD4E7">
+    <circle cx="400" cy="450" r="6"/>
+    <circle cx="670" cy="450" r="6"/>
+    <circle cx="960" cy="450" r="6"/>
+  </g>
+</svg>
