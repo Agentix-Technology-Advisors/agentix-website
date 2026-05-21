@@ -4,15 +4,12 @@
     <loc>https://agentixadvisors.com/</loc>
   </url>
   <url>
-    <loc>https://agentixadvisors.com/services.html</loc>
+    <loc>https://agentixadvisors.com/services/</loc>
   </url>
   <url>
-    <loc>https://agentixadvisors.com/ai-transformation.html</loc>
+    <loc>https://agentixadvisors.com/about/</loc>
   </url>
   <url>
-    <loc>https://agentixadvisors.com/about.html</loc>
-  </url>
-  <url>
-    <loc>https://agentixadvisors.com/contact.html</loc>
+    <loc>https://agentixadvisors.com/contact/</loc>
   </url>
 </urlset>

@@ -3,4 +3,5 @@
 Thumbs.db
 
 # Local editor settings
-.vscode/
+.vscode/*
+!.vscode/settings.json

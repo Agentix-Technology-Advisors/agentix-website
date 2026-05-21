@@ -1,0 +1,37 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimal abstract background with gradients and geometric lines">
+  <defs>
+    <linearGradient id="bgGradient" x1="300" y1="0" x2="1620" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A1220"/>
+      <stop offset="0.55" stop-color="#0B1528"/>
+      <stop offset="1" stop-color="#09101D"/>
+    </linearGradient>
+    <radialGradient id="orbOne" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 320) rotate(15) scale(560 420)">
+      <stop stop-color="#8EA2FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8EA2FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbTwo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1360 760) rotate(-20) scale(620 460)">
+      <stop stop-color="#6E86F8" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#6E86F8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineFade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#AFC0FF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#AFC0FF" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  <rect width="1920" height="1080" fill="url(#orbOne)"/>
+  <rect width="1920" height="1080" fill="url(#orbTwo)"/>
+
+  <g opacity="0.55">
+    <path d="M-140 690C290 520 565 535 910 640C1230 740 1570 760 2060 560" stroke="url(#lineFade)" stroke-width="1.6"/>
+    <path d="M-120 760C330 590 620 598 940 700C1250 798 1605 820 2050 625" stroke="url(#lineFade)" stroke-width="1.2"/>
+    <path d="M-80 845C355 675 650 682 972 778C1270 866 1620 888 2030 700" stroke="url(#lineFade)" stroke-width="1"/>
+  </g>
+
+  <g opacity="0.18">
+    <path d="M1210 140L1730 620" stroke="#B6C5FF" stroke-width="1"/>
+    <path d="M1130 120L1650 600" stroke="#B6C5FF" stroke-width="1"/>
+    <path d="M1045 98L1565 578" stroke="#B6C5FF" stroke-width="1"/>
+  </g>
+</svg>
