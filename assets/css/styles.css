@@ -601,6 +601,21 @@ li {
   position: relative;
 }
 
+.visual-panel--pink-ambience {
+  position: relative;
+}
+
+.visual-panel--pink-ambience::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(255, 118, 173, 0.34), rgba(255, 118, 173, 0) 50%),
+    radial-gradient(circle at 20% 82%, rgba(126, 238, 255, 0.13), rgba(126, 238, 255, 0) 55%);
+  z-index: 1;
+}
+
 .visual-panel--engagement::after {
   content: "";
   position: absolute;
@@ -612,7 +627,11 @@ li {
 }
 
 .visual-panel--engagement img {
-  filter: saturate(1.03) contrast(1.04);
+  filter: saturate(1.07) contrast(1.06) brightness(1.02);
+}
+
+.visual-panel--pink-ambience img {
+  filter: saturate(1.08) contrast(1.06) brightness(1.03);
 }
 
 .hero-actions,
