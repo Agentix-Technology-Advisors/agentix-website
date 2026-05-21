@@ -587,14 +587,19 @@ li {
 }
 
 .engagement-visual-grid .visual-panel {
-  height: 100%;
-  max-height: none;
-  align-self: stretch;
+  height: auto;
+  width: 96%;
+  max-height: 420px;
+  justify-self: start;
+  align-self: end;
 }
 
 .engagement-visual-grid .visual-panel img {
-  height: 100%;
+  height: auto;
   aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center bottom;
+  padding: 0.45rem;
 }
 
 .visual-panel--engagement {
@@ -728,6 +733,10 @@ main>.section-block:first-of-type {
   align-items: stretch;
 }
 
+.engagement-visual-grid {
+  align-items: end;
+}
+
 .service-chip-grid,
 .process-pill-grid {
   display: grid;
@@ -781,13 +790,11 @@ main>.section-block:first-of-type {
   display: inline-flex;
   align-items: center;
   min-height: 2.5rem;
-  padding: 0.65rem 0.9rem;
   border: 1px solid rgba(183, 245, 255, 0.22);
   border-radius: 12px;
   background: linear-gradient(120deg,
       rgba(46, 230, 255, 0.12),
       rgba(255, 255, 255, 0.03));
-  color: var(--accent-pop-soft);
   font-size: 0.9rem;
 }
 
@@ -809,7 +816,10 @@ main>.section-block:first-of-type {
 
 .card-grid,
 .process-grid,
-.three-column-grid,
+.three-column-grid {
+  width: 100%;
+}
+
 .two-column-grid,
 .stack-grid {
   display: grid;
@@ -1267,6 +1277,51 @@ main>.section-block:first-of-type {
   height: auto;
 }
 
+.about-tech-stack {
+  margin-top: 1.35rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-tech-stack h3 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.2rem, 2.3vw, 1.55rem);
+}
+
+.about-tech-stack p {
+  margin-top: 0.85rem;
+  color: var(--muted);
+}
+
+.about-tech-logos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.about-tech-logo {
+  margin: 0;
+  min-height: 76px;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(242, 247, 255, 0.92));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(6, 18, 34, 0.2);
+}
+
+.about-tech-logo img {
+  display: block;
+  width: 100%;
+  height: 40px;
+  object-fit: contain;
+}
+
 /* Leadership bio cards */
 .leader-grid {
   display: flex;
@@ -1287,8 +1342,6 @@ main>.section-block:first-of-type {
 }
 
 .leader-card__photo {
-  width: 180px;
-  height: 180px;
   border-radius: var(--radius-md);
   object-fit: cover;
   object-position: center top;
@@ -1338,6 +1391,10 @@ main>.section-block:first-of-type {
 
   .about-badge-card {
     max-width: 180px;
+  }
+
+  .about-tech-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .leader-card {
@@ -1493,6 +1550,11 @@ main>.section-block:first-of-type {
   .engagement-visual-grid,
   .process-pill-grid {
     grid-template-columns: 1fr;
+  }
+
+  .engagement-visual-grid .visual-panel {
+    width: 100%;
+    max-height: none;
   }
 
   .service-chip-grid {

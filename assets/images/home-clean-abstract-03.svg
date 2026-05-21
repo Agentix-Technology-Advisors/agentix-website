@@ -1,56 +1,63 @@
 <svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="110" y1="42" x2="1290" y2="854" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1730"/>
-      <stop offset="1" stop-color="#14274A"/>
+    <linearGradient id="bg3" x1="100" y1="42" x2="1290" y2="852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1630"/>
+      <stop offset="1" stop-color="#13264A"/>
     </linearGradient>
-    <radialGradient id="pinkGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 220) rotate(128) scale(500 420)">
-      <stop stop-color="#FF76AF" stop-opacity="0.52"/>
-      <stop offset="1" stop-color="#FF76AF" stop-opacity="0"/>
+    <radialGradient id="glow3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(992 210) rotate(130) scale(540 420)">
+      <stop stop-color="#FF77B1" stop-opacity="0.54"/>
+      <stop offset="1" stop-color="#FF77B1" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="line" x1="280" y1="460" x2="1120" y2="460" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9BEEFF"/>
+    <linearGradient id="ringStroke" x1="454" y1="450" x2="946" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9DEFFF"/>
       <stop offset="0.54" stop-color="#F7A8CD"/>
-      <stop offset="1" stop-color="#B7C5FF"/>
+      <stop offset="1" stop-color="#B6C6FF"/>
     </linearGradient>
+    <filter id="ringBlur" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
   </defs>
 
-  <rect width="1400" height="900" rx="34" fill="url(#bg)"/>
-  <rect width="1400" height="900" rx="34" fill="url(#pinkGlow)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#bg3)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#glow3)"/>
 
-  <rect x="184" y="176" width="1032" height="548" rx="32" fill="#0D1B36" fill-opacity="0.62" stroke="#D6E9FF" stroke-opacity="0.22"/>
-
-  <g opacity="0.3" stroke="#CEE8FF" stroke-width="1.4">
-    <path d="M244 286H1156"/>
-    <path d="M244 460H1156"/>
-    <path d="M244 634H1156"/>
+  <g opacity="0.28" stroke="#D5E8FF" stroke-width="1.2">
+    <path d="M170 260H1230"/>
+    <path d="M170 450H1230"/>
+    <path d="M170 640H1230"/>
   </g>
 
-  <g fill="#13274B" stroke="#9DEEFF" stroke-opacity="0.62" stroke-width="2">
-    <rect x="274" y="352" width="168" height="216" rx="16"/>
-    <rect x="534" y="316" width="186" height="288" rx="18" stroke="#F6A8CD" stroke-opacity="0.68"/>
-    <rect x="812" y="270" width="246" height="380" rx="22"/>
+  <circle cx="700" cy="450" r="246" fill="#112345" fill-opacity="0.48" stroke="url(#ringStroke)" stroke-width="2.8"/>
+  <circle cx="700" cy="450" r="178" fill="#13274B" fill-opacity="0.38" stroke="#CFE6FF" stroke-opacity="0.6" stroke-width="2.2"/>
+  <circle cx="700" cy="450" r="112" fill="#14284D" stroke="#F7A8CD" stroke-opacity="0.76" stroke-width="2.2"/>
+
+  <circle cx="700" cy="450" r="78" fill="#0F2141"/>
+  <circle cx="700" cy="450" r="8" fill="#FFD9EB" filter="url(#ringBlur)"/>
+
+  <path d="M700 204V338" stroke="#9DEFFF" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M914 450H780" stroke="#F7A8CD" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M700 696V562" stroke="#B7C6FF" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M486 450H620" stroke="#9DEFFF" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+
+  <g fill="#13274B" stroke="#A2F1FF" stroke-opacity="0.64" stroke-width="2">
+    <circle cx="700" cy="184" r="36"/>
+    <circle cx="936" cy="450" r="36"/>
+    <circle cx="700" cy="716" r="36"/>
+    <circle cx="464" cy="450" r="36"/>
   </g>
 
-  <path d="M358 460H812" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M462 394L534 460L462 526" stroke="#DCE9FF" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M744 380L812 460L744 540" stroke="#F7A8CD" stroke-width="2.6" stroke-linecap="round"/>
-
-  <g fill="#13274B" stroke="#A0F0FF" stroke-opacity="0.58" stroke-width="1.8">
-    <rect x="884" y="332" width="150" height="88" rx="14"/>
-    <rect x="884" y="444" width="150" height="88" rx="14" stroke="#F6A8CD" stroke-opacity="0.68"/>
-    <rect x="884" y="556" width="150" height="88" rx="14"/>
+  <g fill="#FFD8EA">
+    <circle cx="700" cy="184" r="6"/>
+    <circle cx="936" cy="450" r="6"/>
+    <circle cx="700" cy="716" r="6"/>
+    <circle cx="464" cy="450" r="6"/>
   </g>
 
-  <g fill="#FFD5E8">
-    <circle cx="358" cy="460" r="6"/>
-    <circle cx="626" cy="460" r="6"/>
-    <circle cx="934" cy="460" r="6"/>
-  </g>
-
-  <g fill="#C8D9F5" font-family="Manrope, sans-serif" font-size="22" font-weight="600" opacity="0.82">
-    <text x="274" y="324">Customer Signals</text>
-    <text x="534" y="286">Intent Routing</text>
-    <text x="812" y="240">CX Command Center</text>
+  <g fill="#CBDCF7" font-family="Manrope, sans-serif" font-size="23" font-weight="600" opacity="0.88" text-anchor="middle">
+    <text x="700" y="126">Customer Signals</text>
+    <text x="1062" y="458">Routing Intelligence</text>
+    <text x="700" y="810">Automation Actions</text>
+    <text x="332" y="458">Agent Assist</text>
+    <text x="700" y="456">CX Core</text>
   </g>
 </svg>

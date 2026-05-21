@@ -1,58 +1,65 @@
 <svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="130" y1="50" x2="1270" y2="850" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0C1730"/>
-      <stop offset="1" stop-color="#15284A"/>
+    <linearGradient id="bg1" x1="120" y1="80" x2="1270" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1630"/>
+      <stop offset="1" stop-color="#122547"/>
     </linearGradient>
-    <radialGradient id="pinkGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 240) rotate(130) scale(500 420)">
-      <stop stop-color="#FF76B0" stop-opacity="0.52"/>
-      <stop offset="1" stop-color="#FF76B0" stop-opacity="0"/>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1015 210) rotate(124) scale(560 430)">
+      <stop stop-color="#FF77B2" stop-opacity="0.56"/>
+      <stop offset="1" stop-color="#FF77B2" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="line" x1="250" y1="450" x2="1160" y2="450" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9CEEFF"/>
-      <stop offset="0.55" stop-color="#F7A7CC"/>
-      <stop offset="1" stop-color="#B7C5FF"/>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(398 518) rotate(90) scale(230 230)">
+      <stop stop-color="#9CF2FF" stop-opacity="0.74"/>
+      <stop offset="1" stop-color="#9CF2FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(726 386) rotate(90) scale(250 250)">
+      <stop stop-color="#F7A8CD" stop-opacity="0.66"/>
+      <stop offset="1" stop-color="#F7A8CD" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 528) rotate(90) scale(260 260)">
+      <stop stop-color="#B4C9FF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#B4C9FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokeOrbit" x1="250" y1="470" x2="1130" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9CF2FF"/>
+      <stop offset="0.52" stop-color="#F7A8CD"/>
+      <stop offset="1" stop-color="#B7C6FF"/>
     </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
   </defs>
 
-  <rect width="1400" height="900" rx="34" fill="url(#bg)"/>
-  <rect width="1400" height="900" rx="34" fill="url(#pinkGlow)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#bg1)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#glow1)"/>
 
-  <rect x="176" y="174" width="1048" height="552" rx="32" fill="#0D1B35" fill-opacity="0.62" stroke="#D6E9FF" stroke-opacity="0.22"/>
-
-  <g opacity="0.3" stroke="#CFE8FF" stroke-width="1.4">
-    <path d="M232 280H1168"/>
-    <path d="M232 450H1168"/>
-    <path d="M232 620H1168"/>
+  <g opacity="0.36" stroke="#D7E9FF" stroke-width="1.2">
+    <path d="M176 260H1224"/>
+    <path d="M176 450H1224"/>
+    <path d="M176 640H1224"/>
   </g>
 
-  <g fill="#13274B" stroke="#9DEEFF" stroke-opacity="0.62" stroke-width="2">
-    <rect x="268" y="364" width="110" height="172" rx="14"/>
-    <rect x="430" y="328" width="128" height="244" rx="16"/>
-    <rect x="620" y="286" width="170" height="328" rx="20" stroke="#F6A7CC" stroke-opacity="0.68"/>
-    <rect x="864" y="336" width="132" height="228" rx="16"/>
-    <rect x="1050" y="366" width="112" height="168" rx="14"/>
+  <path d="M230 596C314 434 473 352 640 368C805 384 945 500 1110 470" stroke="url(#strokeOrbit)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M258 450C362 300 568 260 734 324C906 390 1018 546 1162 560" stroke="#CFE5FF" stroke-opacity="0.52" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 10"/>
+  <path d="M248 676C412 560 584 560 758 620C922 676 1032 646 1182 570" stroke="#F5A7CC" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 11"/>
+
+  <circle cx="398" cy="518" r="188" fill="url(#orbA)"/>
+  <circle cx="726" cy="386" r="204" fill="url(#orbB)"/>
+  <circle cx="1030" cy="528" r="214" fill="url(#orbC)"/>
+
+  <circle cx="398" cy="518" r="74" fill="#102444" stroke="#9CF2FF" stroke-opacity="0.72" stroke-width="2.4"/>
+  <circle cx="726" cy="386" r="88" fill="#13264A" stroke="#F7A8CD" stroke-opacity="0.74" stroke-width="2.4"/>
+  <circle cx="1030" cy="528" r="96" fill="#122548" stroke="#B7C6FF" stroke-opacity="0.76" stroke-width="2.4"/>
+
+  <g fill="#FFD7EA" filter="url(#softGlow)">
+    <circle cx="398" cy="518" r="7"/>
+    <circle cx="726" cy="386" r="7"/>
+    <circle cx="1030" cy="528" r="7"/>
   </g>
 
-  <path d="M322 450H1050" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M386 390L430 450L386 510" stroke="#DCEAFF" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M572 372L620 450L572 528" stroke="#DCEAFF" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M804 360L864 450L804 540" stroke="#F7A8CD" stroke-width="2.6" stroke-linecap="round"/>
-  <path d="M1010 392L1050 450L1010 508" stroke="#DCEAFF" stroke-width="2.4" stroke-linecap="round"/>
-
-  <g fill="#FFD5E8">
-    <circle cx="322" cy="450" r="6"/>
-    <circle cx="494" cy="450" r="6"/>
-    <circle cx="702" cy="450" r="6"/>
-    <circle cx="928" cy="450" r="6"/>
-    <circle cx="1106" cy="450" r="6"/>
-  </g>
-
-  <g fill="#C8D9F5" font-family="Manrope, sans-serif" font-size="22" font-weight="600" opacity="0.82">
-    <text x="268" y="338">Voice</text>
-    <text x="430" y="300">Chat</text>
-    <text x="620" y="256">CX Orchestration</text>
-    <text x="864" y="308">Agent Assist</text>
-    <text x="1048" y="338">Resolution</text>
+  <g fill="#CBDCF7" font-family="Manrope, sans-serif" font-size="24" font-weight="600" opacity="0.88">
+    <text x="340" y="655">Voice + Chat</text>
+    <text x="650" y="252">CX Intelligence</text>
+    <text x="953" y="682">Resolution Loop</text>
   </g>
 </svg>
