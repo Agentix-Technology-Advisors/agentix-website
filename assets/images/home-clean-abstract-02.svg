@@ -1,44 +1,57 @@
 <svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg2" x1="116" y1="44" x2="1276" y2="838" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="120" y1="48" x2="1280" y2="848" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0C1730"/>
-      <stop offset="1" stop-color="#142649"/>
+      <stop offset="1" stop-color="#142749"/>
     </linearGradient>
-    <radialGradient id="pink2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 250) rotate(128) scale(470 400)">
-      <stop stop-color="#FF74AE" stop-opacity="0.52"/>
-      <stop offset="1" stop-color="#FF74AE" stop-opacity="0"/>
+    <radialGradient id="pinkGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 220) rotate(130) scale(500 430)">
+      <stop stop-color="#FF75AE" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FF75AE" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="line2" x1="264" y1="450" x2="1124" y2="450" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#98EEFF"/>
-      <stop offset="0.52" stop-color="#F6A7CC"/>
-      <stop offset="1" stop-color="#B3C2FF"/>
+    <linearGradient id="line" x1="320" y1="478" x2="1080" y2="478" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BEEFF"/>
+      <stop offset="0.52" stop-color="#F7A7CD"/>
+      <stop offset="1" stop-color="#B5C4FF"/>
     </linearGradient>
   </defs>
 
-  <rect width="1400" height="900" rx="34" fill="url(#bg2)"/>
-  <rect width="1400" height="900" rx="34" fill="url(#pink2)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#bg)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#pinkGlow)"/>
 
-  <rect x="220" y="220" width="960" height="460" rx="30" fill="#0E1C37" fill-opacity="0.58" stroke="#D4E9FF" stroke-opacity="0.24"/>
+  <rect x="200" y="188" width="1000" height="524" rx="30" fill="#0E1C37" fill-opacity="0.62" stroke="#D5E9FF" stroke-opacity="0.22"/>
 
-  <g opacity="0.32" stroke="#CFE7FF" stroke-width="1.4">
-    <path d="M280 300H1120"/>
-    <path d="M280 450H1120"/>
-    <path d="M280 600H1120"/>
+  <g opacity="0.28" stroke="#CFE8FF" stroke-width="1.4">
+    <path d="M260 300H1140"/>
+    <path d="M260 478H1140"/>
+    <path d="M260 656H1140"/>
   </g>
 
   <g fill="#13264A" stroke="#9DEFFF" stroke-opacity="0.6" stroke-width="2">
-    <rect x="320" y="356" width="160" height="188" rx="16"/>
-    <rect x="560" y="330" width="220" height="240" rx="20" stroke="#F6A7CC" stroke-opacity="0.66"/>
-    <rect x="860" y="286" width="200" height="328" rx="20"/>
+    <rect x="300" y="354" width="140" height="248" rx="16"/>
+    <rect x="520" y="318" width="168" height="320" rx="18" stroke="#F6A7CC" stroke-opacity="0.68"/>
+    <rect x="770" y="282" width="200" height="392" rx="20"/>
   </g>
 
-  <path d="M420 450H860" stroke="url(#line2)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M486 372L560 450L486 528" stroke="#D9E8FF" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M786 356L860 450L786 544" stroke="#F6A7CC" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M370 478H770" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M452 402L520 478L452 554" stroke="#DCE9FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M704 392L770 478L704 564" stroke="#F7A8CD" stroke-width="2.6" stroke-linecap="round"/>
 
   <g fill="#FFD4E7">
-    <circle cx="400" cy="450" r="6"/>
-    <circle cx="670" cy="450" r="6"/>
-    <circle cx="960" cy="450" r="6"/>
+    <circle cx="370" cy="478" r="6"/>
+    <circle cx="604" cy="478" r="6"/>
+    <circle cx="870" cy="478" r="6"/>
+  </g>
+
+  <g fill="#13274B" stroke="#A1F0FF" stroke-opacity="0.56" stroke-width="1.8">
+    <rect x="980" y="330" width="152" height="84" rx="14"/>
+    <rect x="980" y="438" width="152" height="84" rx="14" stroke="#F6A7CC" stroke-opacity="0.68"/>
+    <rect x="980" y="546" width="152" height="84" rx="14"/>
+  </g>
+
+  <g fill="#C8D9F5" font-family="Manrope, sans-serif" font-size="22" font-weight="600" opacity="0.82">
+    <text x="300" y="326">Discovery</text>
+    <text x="520" y="288">Design</text>
+    <text x="770" y="252">Deploy</text>
+    <text x="982" y="306">CX Metrics</text>
   </g>
 </svg>

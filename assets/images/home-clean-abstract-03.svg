@@ -1,42 +1,56 @@
 <svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg3" x1="100" y1="52" x2="1280" y2="842" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="110" y1="42" x2="1290" y2="854" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0B1730"/>
-      <stop offset="1" stop-color="#14264A"/>
+      <stop offset="1" stop-color="#14274A"/>
     </linearGradient>
-    <radialGradient id="pink3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(940 240) rotate(130) scale(490 410)">
-      <stop stop-color="#FF74AE" stop-opacity="0.53"/>
-      <stop offset="1" stop-color="#FF74AE" stop-opacity="0"/>
+    <radialGradient id="pinkGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 220) rotate(128) scale(500 420)">
+      <stop stop-color="#FF76AF" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#FF76AF" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="line3" x1="300" y1="462" x2="1100" y2="462" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#96EDFF"/>
-      <stop offset="0.55" stop-color="#F7A8CD"/>
-      <stop offset="1" stop-color="#B5C4FF"/>
+    <linearGradient id="line" x1="280" y1="460" x2="1120" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BEEFF"/>
+      <stop offset="0.54" stop-color="#F7A8CD"/>
+      <stop offset="1" stop-color="#B7C5FF"/>
     </linearGradient>
   </defs>
 
-  <rect width="1400" height="900" rx="34" fill="url(#bg3)"/>
-  <rect width="1400" height="900" rx="34" fill="url(#pink3)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#bg)"/>
+  <rect width="1400" height="900" rx="34" fill="url(#pinkGlow)"/>
+
+  <rect x="184" y="176" width="1032" height="548" rx="32" fill="#0D1B36" fill-opacity="0.62" stroke="#D6E9FF" stroke-opacity="0.22"/>
 
   <g opacity="0.3" stroke="#CEE8FF" stroke-width="1.4">
-    <path d="M180 260H1220"/>
-    <path d="M180 462H1220"/>
-    <path d="M180 664H1220"/>
+    <path d="M244 286H1156"/>
+    <path d="M244 460H1156"/>
+    <path d="M244 634H1156"/>
   </g>
 
-  <g>
-    <rect x="274" y="322" width="214" height="282" rx="22" fill="#13274C" stroke="#9DEFFF" stroke-opacity="0.62" stroke-width="2"/>
-    <rect x="586" y="288" width="244" height="348" rx="24" fill="#13264B" stroke="#F6A8CD" stroke-opacity="0.66" stroke-width="2"/>
-    <rect x="924" y="248" width="186" height="428" rx="22" fill="#13254A" stroke="#A7F1FF" stroke-opacity="0.62" stroke-width="2"/>
+  <g fill="#13274B" stroke="#9DEEFF" stroke-opacity="0.62" stroke-width="2">
+    <rect x="274" y="352" width="168" height="216" rx="16"/>
+    <rect x="534" y="316" width="186" height="288" rx="18" stroke="#F6A8CD" stroke-opacity="0.68"/>
+    <rect x="812" y="270" width="246" height="380" rx="22"/>
   </g>
 
-  <path d="M356 462H924" stroke="url(#line3)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M492 376L586 462L492 548" stroke="#D9E8FF" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M846 356L924 462L846 568" stroke="#F7A8CD" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M358 460H812" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M462 394L534 460L462 526" stroke="#DCE9FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M744 380L812 460L744 540" stroke="#F7A8CD" stroke-width="2.6" stroke-linecap="round"/>
+
+  <g fill="#13274B" stroke="#A0F0FF" stroke-opacity="0.58" stroke-width="1.8">
+    <rect x="884" y="332" width="150" height="88" rx="14"/>
+    <rect x="884" y="444" width="150" height="88" rx="14" stroke="#F6A8CD" stroke-opacity="0.68"/>
+    <rect x="884" y="556" width="150" height="88" rx="14"/>
+  </g>
 
   <g fill="#FFD5E8">
-    <circle cx="382" cy="462" r="6"/>
-    <circle cx="708" cy="462" r="6"/>
-    <circle cx="1018" cy="462" r="6"/>
+    <circle cx="358" cy="460" r="6"/>
+    <circle cx="626" cy="460" r="6"/>
+    <circle cx="934" cy="460" r="6"/>
+  </g>
+
+  <g fill="#C8D9F5" font-family="Manrope, sans-serif" font-size="22" font-weight="600" opacity="0.82">
+    <text x="274" y="324">Customer Signals</text>
+    <text x="534" y="286">Intent Routing</text>
+    <text x="812" y="240">CX Command Center</text>
   </g>
 </svg>
