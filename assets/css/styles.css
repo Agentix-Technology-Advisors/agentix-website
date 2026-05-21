@@ -1326,7 +1326,7 @@ main>.section-block:first-of-type {
 }
 
 .about-tech-logo__img--zoom {
-  transform: scale(0.9);
+  transform: scale(0.81);
   transform-origin: center;
 }
 
@@ -1579,6 +1579,41 @@ main>.section-block:first-of-type {
 }
 
 @media (max-width: 820px) {
+
+  body {
+    background: linear-gradient(180deg, #0a1220 0%, #081120 52%, #070f1b 100%);
+  }
+
+  body::before {
+    opacity: 0.08;
+    background-size: 160px 160px;
+  }
+
+  .section-block--accent::before {
+    display: none;
+  }
+
+  .visual-panel--pink-ambience::before,
+  .visual-panel--engagement::after {
+    display: none;
+  }
+
+  .hero-section--home::before {
+    background: linear-gradient(160deg,
+        rgba(5, 10, 18, 0.45) 0%,
+        rgba(5, 11, 21, 0.7) 58%,
+        rgba(5, 11, 21, 0.9) 100%);
+  }
+
+  .service-chip,
+  .process-pill,
+  .service-stage-visual,
+  .feature-card,
+  .process-card,
+  .service-detail,
+  .contact-card {
+    background: var(--surface);
+  }
 
   .desktop-cta,
   .header-phone {
