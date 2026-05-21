@@ -1336,12 +1336,15 @@ main>.section-block:first-of-type {
   border-radius: var(--radius-lg);
   padding: 2.25rem 2.5rem;
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 210px 1fr;
   gap: 2.5rem;
   align-items: start;
 }
 
 .leader-card__photo {
+  display: block;
+  width: 200px;
+  height: 200px;
   border-radius: var(--radius-md);
   object-fit: cover;
   object-position: center top;
@@ -1402,8 +1405,8 @@ main>.section-block:first-of-type {
   }
 
   .leader-card__photo {
-    width: 120px;
-    height: 120px;
+    width: 132px;
+    height: 132px;
   }
 }
 
