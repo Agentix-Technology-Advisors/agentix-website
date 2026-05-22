@@ -1322,12 +1322,27 @@ main>.section-block:first-of-type {
 }
 
 .about-tech-logo__img--dialpad {
-  transform: scale(1.18);
+  transform: scale(1.42);
   transform-origin: center;
 }
 
 .about-tech-logo__img--zoom {
-  transform: scale(0.81);
+  transform: scale(0.66);
+  transform-origin: center;
+}
+
+.about-tech-logo__img--hubspot {
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+.about-tech-logo__img--cisco {
+  transform: scale(1.8);
+  transform-origin: center;
+}
+
+.about-tech-logo__img--intercom {
+  transform: scale(1.56);
   transform-origin: center;
 }
 
