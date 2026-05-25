@@ -789,13 +789,37 @@ main>.section-block:first-of-type {
 .pill {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 2.5rem;
+  padding: 0.62rem 1.05rem;
   border: 1px solid rgba(183, 245, 255, 0.22);
   border-radius: 12px;
   background: linear-gradient(120deg,
       rgba(46, 230, 255, 0.12),
       rgba(255, 255, 255, 0.03));
   font-size: 0.9rem;
+}
+
+.pill-row--flow {
+  align-items: center;
+  gap: 1.35rem;
+}
+
+.pill-row--flow .pill {
+  position: relative;
+}
+
+.pill-row--flow .pill:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: calc(100% + 0.36rem);
+  top: 50%;
+  width: 0.9rem;
+  height: 0.65rem;
+  transform: translateY(-50%);
+  background: rgba(183, 245, 255, 0.65);
+  clip-path: polygon(0 0, 100% 50%, 0 100%, 28% 50%);
+  filter: drop-shadow(0 0 4px rgba(183, 245, 255, 0.25));
 }
 
 .process-pill-grid {
@@ -1731,6 +1755,14 @@ main>.section-block:first-of-type {
 }
 
 @media (max-width: 700px) {
+  .pill-row--flow {
+    gap: 0.75rem;
+  }
+
+  .pill-row--flow .pill:not(:last-child)::after {
+    content: none;
+  }
+
   .service-stage-layout {
     grid-template-columns: 1fr;
     gap: 0.85rem;
