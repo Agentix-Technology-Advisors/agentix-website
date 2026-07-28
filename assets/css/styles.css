@@ -601,8 +601,8 @@ li {
 
 .engagement-visual-grid .visual-panel {
   height: auto;
-  width: 100%;
-  max-height: 420px;
+  width: 92%;
+  max-height: 360px;
   justify-self: start;
   align-self: start;
 }
@@ -650,6 +650,22 @@ li {
 
 .visual-panel--pink-ambience img {
   filter: saturate(1.08) contrast(1.06) brightness(1.03);
+}
+
+.visual-panel img.diagram-image--tone-crisp {
+  filter: saturate(0.92) contrast(1.09) brightness(1.08);
+}
+
+.visual-panel img.diagram-image--tone-natural {
+  filter: saturate(1.01) contrast(1.03) brightness(1.01);
+}
+
+.visual-panel img.diagram-image--tone-tech {
+  filter: saturate(0.94) contrast(1.08) brightness(1.06) hue-rotate(-6deg);
+}
+
+.visual-panel img.diagram-image--tone-boardroom {
+  filter: saturate(0.98) contrast(1.05) brightness(1.07) hue-rotate(-5deg);
 }
 
 .hero-actions,
