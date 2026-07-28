@@ -126,6 +126,14 @@ ul {
   padding-top: 52px;
 }
 
+#services-header.section {
+  padding-bottom: 42px;
+}
+
+#services-engagements.section {
+  padding-top: 42px;
+}
+
 .section-head {
   max-width: none;
   margin-bottom: 54px;
@@ -817,6 +825,84 @@ ul {
   font-size: 18px;
 }
 
+.services-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.section--dark .services-eyebrow {
+  color: var(--accent);
+}
+
+.services-engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.services-engagement-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+  border: 1px solid rgba(14, 24, 38, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.services-engagement-card h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.services-engagement-desc {
+  font-size: 16px;
+  color: var(--text-slate);
+}
+
+.services-engagement-list {
+  margin-top: 14px;
+  padding-left: 18px;
+}
+
+.services-engagement-list li {
+  margin-top: 6px;
+  font-size: 14.5px;
+  color: var(--text-slate);
+}
+
+.services-engagement-list strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.services-clarifying-line {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 17px;
+  color: #6b7688;
+}
+
+.services-scope-strip {
+  margin-top: 20px;
+  padding: 32px;
+  border-radius: 6px;
+  background: #eef3f8;
+}
+
+.services-scope-strip p {
+  font-size: 16px;
+  color: var(--text-slate);
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1414,6 +1500,14 @@ ul {
     padding-top: 38px;
   }
 
+  #services-header.section {
+    padding-bottom: 30px;
+  }
+
+  #services-engagements.section {
+    padding-top: 30px;
+  }
+
   .method-intro p {
     font-size: 16px;
   }
@@ -1452,6 +1546,18 @@ ul {
 }
 
 @media (max-width: 900px) {
+  .services-engagement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-engagement-card {
+    padding: 32px;
+  }
+
+  .services-scope-strip {
+    padding: 28px;
+  }
+
   .credential-band {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -1475,6 +1581,14 @@ ul {
 
   #credentials.section {
     padding-top: 32px;
+  }
+
+  #services-header.section {
+    padding-bottom: 24px;
+  }
+
+  #services-engagements.section {
+    padding-top: 24px;
   }
 
   .hero-copy h1 {
