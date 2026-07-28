@@ -1228,8 +1228,8 @@ h3 {
   width: 100%;
   height: 40px;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.82;
+  filter: none;
+  opacity: 1;
 }
 
 .about-tech-logo__img--dialpad {
