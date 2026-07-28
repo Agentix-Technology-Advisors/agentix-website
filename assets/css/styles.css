@@ -602,14 +602,14 @@ li {
 .engagement-visual-grid .visual-panel {
   height: auto;
   width: 92%;
-  max-height: 360px;
+  max-height: 330px;
   justify-self: start;
   align-self: start;
 }
 
 .engagement-visual-grid .visual-panel img {
   height: auto;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: center;
   padding: 0;
