@@ -14,17 +14,20 @@
   <meta property="og:site_name" content="Agentix Technology Advisors" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://agentixadvisors.com/services/" />
-  <meta property="og:image" content="https://agentixadvisors.com/assets/images/agentix_logo_fullres.png" />
-  <meta property="og:image:alt" content="Agentix Technology Advisors" />
+  <meta property="og:image" content="https://agentixadvisors.com/assets/images/agentix-social-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Agentix Technology Advisors — AI-powered CX, deployed right" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Services | Agentix Technology Advisors" />
   <meta name="twitter:description" content="Advisory, implementation, and ongoing optimization for AI-first contact centers and customer communications." />
-  <meta name="twitter:image" content="https://agentixadvisors.com/assets/images/agentix_logo_fullres.png" />
+  <meta name="twitter:image" content="https://agentixadvisors.com/assets/images/agentix-social-card.png" />
   <meta name="theme-color" content="#09111f" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/assets/images/agentix_icon_32x32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/agentix_icon_32x32.png" />
   <link rel="stylesheet" href="/assets/css/styles.css?v=20260728a" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LFK4Y2G4D"></script>
   <script>
@@ -32,6 +35,26 @@
     function gtag() { dataLayer.push(arguments); }
     gtag("js", new Date());
     gtag("config", "G-2LFK4Y2G4D");
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://agentixadvisors.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://agentixadvisors.com/services/"
+        }
+      ]
+    }
   </script>
 </head>
 
@@ -51,20 +74,20 @@
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
-          <a href="/#difference">WHY AGENTIX</a>
-          <a href="/#method">HOW WE DELIVER</a>
-          <a class="is-active" href="/services/" aria-current="page">SERVICES</a>
-          <a href="/about/">ABOUT US</a>
+          <a href="/#difference">Why Agentix</a>
+          <a href="/#method">How we deliver</a>
+          <a class="is-active" href="/services/" aria-current="page">Services</a>
+          <a href="/about/">About us</a>
         </nav>
 
-        <a class="button button--ghost desktop-cta" href="/contact/">BOOK A DISCOVERY WORKSHOP</a>
+        <a class="button button--ghost desktop-cta" href="/contact/">Book a discovery workshop</a>
       </div>
     </header>
 
     <main id="main-content">
       <section class="section" id="services-header">
         <div class="container page-intro services-page-intro reveal-up">
-          <span class="services-eyebrow">PROFESSIONAL SERVICES</span>
+          <span class="services-eyebrow">Professional services</span>
           <h1>Four ways to work with Agentix.</h1>
           <p>From platform evaluation through launch and continuous improvement.</p>
         </div>
@@ -73,66 +96,64 @@
       <section class="section" id="services-engagements">
         <div class="container">
           <div class="services-engagement-grid">
-            <article class="services-engagement-card reveal-up">
-              <span class="services-eyebrow">EVALUATE</span>
+            <article class="services-engagement-card reveal-up" id="evaluate">
+              <span class="services-eyebrow">Evaluate</span>
               <h3>Executive Advisory</h3>
               <p class="services-engagement-desc">Strategic and technical guidance for teams evaluating a CX platform decision.</p>
               <ul class="services-engagement-list">
-                <li>CX vendor selection</li>
-                <li>Custom demos</li>
-                <li>Proofs of concept</li>
-                <li>Architecture reviews</li>
-                <li>Security reviews</li>
-                <li>RFP support</li>
+                <li>Vendor selection and evaluation support</li>
+                <li>Custom demo planning and review</li>
+                <li>Proof-of-concept guidance</li>
+                <li>Architecture and security reviews</li>
+                <li>RFP support and response structure</li>
                 <li>Licensing and cost modeling</li>
               </ul>
             </article>
 
-            <article class="services-engagement-card reveal-up">
-              <span class="services-eyebrow">IMPLEMENT</span>
+            <article class="services-engagement-card reveal-up" id="implement">
+              <span class="services-eyebrow">Implement</span>
               <h3>Implementation</h3>
               <p class="services-engagement-desc">End-to-end delivery for scoped deployments, designed and built by principals and senior architects.</p>
               <ul class="services-engagement-list">
-                <li>Contact center</li>
-                <li>AI virtual agents</li>
-                <li>Workforce management</li>
-                <li>Quality management</li>
-                <li>Conversational intelligence</li>
-                <li>Unified communications</li>
-                <li>Custom integrations</li>
+                <li>Contact center implementation</li>
+                <li>AI virtual agent deployment</li>
+                <li>Workforce and quality management setup</li>
+                <li>Conversational intelligence rollout</li>
+                <li>Unified communications configuration</li>
+                <li>Custom integration delivery</li>
               </ul>
             </article>
 
-            <article class="services-engagement-card reveal-up">
-              <span class="services-eyebrow">OPERATE</span>
+            <article class="services-engagement-card reveal-up" id="operate">
+              <span class="services-eyebrow">Operate</span>
               <h3>Consulting Hours</h3>
               <p class="services-engagement-desc">Prepaid blocks of flexible hours, drawn down as needs arise.</p>
               <ul class="services-engagement-list">
-                <li><strong>Administration:</strong> Moves, adds, changes, and deletions for day-to-day system administration.</li>
-                <li><strong>Troubleshooting:</strong> Diagnosis and resolution of configuration-related issues.</li>
-                <li><strong>Training:</strong> Remote sessions for administrators, supervisors, and agents.</li>
-                <li><strong>Advisory:</strong> Best-practice consulting, design reviews, and roadmap planning.</li>
-                <li><strong>Development assistance:</strong> Guidance on API usage and lightweight scripting logic.</li>
+                <li>Administration updates for day-to-day system management</li>
+                <li>Troubleshooting for configuration-related issues</li>
+                <li>Remote training for administrators, supervisors, and agents</li>
+                <li>Advisory support for design reviews and roadmap planning</li>
+                <li>Development assistance for API usage and lightweight scripting logic</li>
               </ul>
             </article>
 
-            <article class="services-engagement-card reveal-up">
-              <span class="services-eyebrow">OPTIMIZE</span>
+            <article class="services-engagement-card reveal-up" id="optimize">
+              <span class="services-eyebrow">Optimize</span>
               <h3>CX Accelerator</h3>
               <p class="services-engagement-desc">A monthly program for keeping your production environment healthy, stable, and continually improving after launch.</p>
               <ul class="services-engagement-list">
-                <li><strong>Configuration analysis:</strong> Structured monthly review of production configuration, identifying drift, inconsistent settings, and operational risk before customers encounter a problem.</li>
-                <li><strong>Production data analysis:</strong> Review of engagement data for escalation trends, routing friction, knowledge gaps, and optimization opportunities.</li>
-                <li><strong>Product advisory:</strong> Ongoing access for product, feature, licensing, and best-practice guidance.</li>
-                <li><strong>Technical support:</strong> Configuration questions, issue triage, and clear next steps.</li>
-                <li><strong>System administration:</strong> Qualifying updates to existing settings, queues, prompts, and workflows.</li>
+                <li>Configuration analysis to identify drift, inconsistent settings, and operational risk before customers encounter a problem</li>
+                <li>Production data analysis for escalation trends, routing friction, knowledge gaps, and optimization opportunities</li>
+                <li>Product advisory for feature planning, licensing guidance, and best-practice recommendations</li>
+                <li>Technical support for configuration questions, issue triage, and clear next steps</li>
+                <li>System administration for qualifying updates to queues, prompts, settings, and workflows</li>
               </ul>
             </article>
           </div>
           <p class="services-clarifying-line reveal-up">Consulting Hours cover work on request. CX Accelerator adds proactive monthly analysis and a standing operating rhythm.</p>
 
           <div class="services-scope-strip reveal-up">
-            <span class="services-eyebrow">HOW ENGAGEMENTS ARE SCOPED</span>
+            <span class="services-eyebrow">How engagements are scoped</span>
             <p>Every engagement defines what Agentix owns, what stays with your team, and what belongs with the platform vendor.</p>
           </div>
         </div>
@@ -154,10 +175,12 @@
       <div class="container footer-inner">
         <span>© 2026 Agentix Technology Advisors</span>
         <div class="footer-links">
-          <a href="/#difference">WHY AGENTIX</a>
-          <a href="/#method">HOW WE DELIVER</a>
-          <a href="/services/">SERVICES</a>
-          <a href="/about/">ABOUT US</a>
+          <a href="/#difference">Why Agentix</a>
+          <a href="/#method">How we deliver</a>
+          <a href="/services/">Services</a>
+          <a href="/about/">About us</a>
+          <a href="/contact/">Contact</a>
+          <a href="tel:+14083596640">408-359-6640</a>
           <a href="mailto:info@agentixadvisors.com">info@agentixadvisors.com</a>
           <a href="https://www.linkedin.com/company/agentixadvisors/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="/privacy-policy/">Privacy Policy</a>
