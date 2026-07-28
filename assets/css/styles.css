@@ -18,6 +18,9 @@
   --hairline-dark: rgba(255, 255, 255, 0.08);
   --hairline-light: rgba(14, 24, 38, 0.1);
   --max-width: 1180px;
+  --section-space-desktop: 72px;
+  --section-space-tablet: 56px;
+  --section-space-mobile: 44px;
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -111,7 +114,7 @@ ul {
 }
 
 .section {
-  padding: 104px 0;
+  padding: var(--section-space-desktop) 0;
 }
 
 .section--dark {
@@ -293,8 +296,8 @@ h3 {
   border-radius: 4px;
   font-size: 14.5px;
   font-weight: 600;
-  letter-spacing: 0;
-  text-transform: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .site-header .button--ghost {
@@ -322,6 +325,8 @@ h3 {
   font-size: 14.5px;
   font-family: "Archivo", system-ui, sans-serif;
   font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   line-height: 1;
   transition:
     background 180ms ease,
@@ -761,7 +766,7 @@ h3 {
 .cta-inner {
   position: relative;
   max-width: none;
-  padding: 112px 0;
+  padding: var(--section-space-desktop) 0;
 }
 
 .cta-inner h2 {
@@ -826,6 +831,10 @@ h3 {
 
 .page-intro p {
   font-size: 17px;
+}
+
+.services-page-intro {
+  margin-bottom: 48px;
 }
 
 .services-eyebrow {
@@ -1464,8 +1473,10 @@ h3 {
 }
 
 @media (max-width: 920px) {
-  .section {
-    padding: 80px 0;
+
+  .section,
+  .cta-inner {
+    padding: var(--section-space-tablet) 0;
   }
 
   .nav-toggle {
@@ -1617,8 +1628,13 @@ h3 {
     width: min(var(--max-width), calc(100% - 40px));
   }
 
-  .section {
-    padding: 64px 0;
+  .section,
+  .cta-inner {
+    padding: var(--section-space-mobile) 0;
+  }
+
+  .services-page-intro {
+    margin-bottom: 34px;
   }
 
   .hero-copy h1 {
