@@ -489,8 +489,14 @@ h3 {
 
 .problem-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+}
+
+@media (min-width: 1380px) {
+  .problem-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .problem-card {
