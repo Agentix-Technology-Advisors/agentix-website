@@ -499,6 +499,84 @@ h3 {
   }
 }
 
+.home-page .hero-grid {
+  min-height: clamp(560px, 72vh, 760px);
+  padding: 94px 0 88px;
+}
+
+.home-page .hero-copy {
+  max-width: 760px;
+}
+
+.home-page .hero-copy h1 {
+  font-size: clamp(54px, 6.4vw, 82px);
+  line-height: 1.06;
+  margin-bottom: 14px;
+}
+
+.home-page .hero-sub {
+  max-width: 640px;
+  margin: 22px 0 36px;
+}
+
+.home-page #problem.section {
+  padding-top: 108px;
+  padding-bottom: 86px;
+}
+
+.home-page #difference.section {
+  padding-top: 122px;
+  padding-bottom: 96px;
+}
+
+.home-page #method.section {
+  padding-top: 122px;
+  padding-bottom: 94px;
+}
+
+.home-page #cta.cta-section .cta-inner {
+  padding-top: 110px;
+  padding-bottom: 106px;
+}
+
+.home-page #problem .section-head,
+.home-page #difference .section-head,
+.home-page #method .method-intro {
+  margin-bottom: 46px;
+}
+
+.home-page #problem .section-head h2,
+.home-page #difference .section-head h2,
+.home-page #method .method-intro h2,
+.home-page #cta .cta-inner h2 {
+  margin-bottom: 12px;
+}
+
+.home-page .problem-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.home-page .problem-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-page .problem-card h3 {
+  min-height: 2.35em;
+}
+
+.home-page .credential-band {
+  grid-template-columns: minmax(280px, 330px) 1fr;
+  gap: 18px;
+  padding: 32px 34px;
+}
+
+.home-page .credential-badge {
+  height: 292px;
+}
+
 .problem-card {
   padding: 34px 30px;
   border: 1px solid var(--hairline-light);
@@ -1551,6 +1629,10 @@ h3 {
     gap: 38px;
   }
 
+  .home-page .problem-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .problem-grid,
   .social-proof-grid,
   .why-grid,
@@ -1577,6 +1659,11 @@ h3 {
   .section,
   .cta-inner {
     padding: var(--section-space-tablet) 0;
+  }
+
+  .home-page .hero-grid {
+    min-height: 0;
+    padding: 86px 0 70px;
   }
 
   .nav-toggle {
@@ -1722,6 +1809,10 @@ h3 {
     height: 180px;
     margin-right: 0;
   }
+
+  .home-page .credential-badge {
+    height: 214px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1740,6 +1831,10 @@ h3 {
 
   .hero-copy h1 {
     font-size: clamp(42px, 12vw, 62px);
+  }
+
+  .home-page .hero-copy h1 {
+    font-size: clamp(46px, 12.6vw, 68px);
   }
 
   .hero-sub {
