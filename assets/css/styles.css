@@ -300,6 +300,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.site-header .desktop-cta {
+  padding: 11px 21px;
+  font-size: 13.5px;
+}
+
 .site-header .button--ghost {
   color: var(--header-text);
   border-color: rgba(21, 42, 69, 0.22);
@@ -386,9 +391,13 @@ h3 {
   padding: 102px 0 92px;
 }
 
+.hero-copy .section-tag {
+  font-size: 12px;
+}
+
 .hero-copy h1 {
   color: #ffffff;
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(43px, 5.4vw, 64px);
   font-weight: 600;
   letter-spacing: -0.018em;
   margin-bottom: 10px;
@@ -1639,7 +1648,7 @@ h3 {
   }
 
   .hero-copy h1 {
-    font-size: clamp(38px, 11vw, 58px);
+    font-size: clamp(40px, 11.5vw, 60px);
   }
 
   .hero-sub {
