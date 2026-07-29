@@ -392,12 +392,12 @@ h3 {
 }
 
 .hero-copy .section-tag {
-  font-size: 12px;
+  font-size: clamp(12px, 0.95vw, 13px);
 }
 
 .hero-copy h1 {
   color: #ffffff;
-  font-size: clamp(43px, 5.4vw, 64px);
+  font-size: clamp(46px, 5.8vw, 68px);
   font-weight: 600;
   letter-spacing: -0.018em;
   margin-bottom: 10px;
@@ -1648,7 +1648,7 @@ h3 {
   }
 
   .hero-copy h1 {
-    font-size: clamp(40px, 11.5vw, 60px);
+    font-size: clamp(42px, 12vw, 62px);
   }
 
   .hero-sub {
