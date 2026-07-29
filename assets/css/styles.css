@@ -536,9 +536,18 @@ h3 {
   font-family: "Newsreader", Georgia, serif;
   font-size: clamp(30px, 4vw, 50px);
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.24;
   letter-spacing: -0.014em;
   color: var(--text-light);
+}
+
+.statement-band__line {
+  display: block;
+  text-wrap: balance;
+}
+
+.statement-band__line+.statement-band__line {
+  margin-top: 0.16em;
 }
 
 .why-grid {
@@ -1367,11 +1376,30 @@ h3 {
 }
 
 .leader-card__link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-top: 12px;
   font-size: 14px;
   font-weight: 600;
   color: var(--accent-deep);
+}
+
+.leader-card__link::after {
+  content: "in";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: currentColor;
+  color: #ffffff;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
 }
 
 .contact-intro {
