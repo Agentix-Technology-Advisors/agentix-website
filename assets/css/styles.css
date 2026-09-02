@@ -1487,8 +1487,8 @@ h3 {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
-  gap: 34px;
+  grid-template-columns: 1fr;
+  gap: 26px;
   align-items: start;
   max-width: none;
 }
@@ -1506,96 +1506,6 @@ h3 {
 .contact-actions {
   display: flex;
   margin-top: 30px;
-}
-
-.contact-direct {
-  margin-top: 24px;
-  padding: 16px 18px;
-  border: 1px solid rgba(14, 24, 38, 0.09);
-  border-radius: var(--radius-sm);
-  background: linear-gradient(180deg, #ffffff 0%, #f9fbfd 100%);
-}
-
-.contact-direct__label {
-  margin: 0;
-  padding: 0;
-  font-family: "Archivo", system-ui, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #5b7087;
-}
-
-.contact-direct__list {
-  margin-top: 12px;
-  list-style: none;
-  display: grid;
-  gap: 0;
-}
-
-.contact-direct__list li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 22px;
-  padding: 9px 0;
-  border-top: 1px solid rgba(14, 24, 38, 0.08);
-}
-
-.contact-direct__list li:first-child {
-  border-top: 0;
-}
-
-.contact-direct__list li>span {
-  font-family: "Archivo", system-ui, sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #647991;
-}
-
-.contact-direct__list a {
-  display: inline-flex;
-  align-items: center;
-  font-family: "Archivo", system-ui, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  color: var(--text-dark);
-  text-align: right;
-  transition: color 180ms ease;
-}
-
-.contact-direct__list a:hover,
-.contact-direct__list a:focus-visible {
-  color: var(--accent-deep);
-}
-
-.contact-direct__linkedin {
-  justify-content: center;
-  width: 46px;
-  min-width: 46px;
-  height: 26px;
-  border: 1px solid rgba(10, 102, 194, 0.45);
-  border-radius: 6px;
-  background: #ffffff;
-  color: #0a66c2;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0;
-  text-transform: lowercase;
-}
-
-.contact-direct__linkedin:hover,
-.contact-direct__linkedin:focus-visible {
-  background: #0a66c2;
-  color: #ffffff;
-}
-
-.contact-direct__item--linkedin {
-  align-items: center;
 }
 
 .contact-form-card {
@@ -1926,24 +1836,8 @@ h3 {
   }
 
   .contact-layout {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .contact-direct__list li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  .contact-direct__list a {
-    justify-content: flex-start;
-    font-size: 16px;
-    text-align: left;
-  }
-
-  .contact-direct__item--linkedin {
-    align-items: flex-start;
+    max-width: none;
+    gap: 24px;
   }
 }
 
@@ -2045,14 +1939,6 @@ h3 {
 
   .contact-actions .button {
     width: 100%;
-  }
-
-  .contact-direct__list {
-    gap: 12px;
-  }
-
-  .contact-direct {
-    padding: 14px;
   }
 }
 
