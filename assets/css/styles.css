@@ -230,19 +230,24 @@ h3 {
 
 .site-nav {
   display: flex;
+  flex: 1;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
+  min-width: 0;
 }
 
 .site-nav a {
   position: relative;
   z-index: 0;
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   min-height: 2.25rem;
   padding: 0.28rem 0.78rem;
   border-radius: 999px;
+  white-space: nowrap;
   color: var(--header-muted);
   font-family: "Archivo", system-ui, sans-serif;
   font-size: 0.74rem;
@@ -313,8 +318,11 @@ h3 {
 }
 
 .site-header .desktop-cta {
+  margin-left: auto;
   padding: 11px 21px;
   font-size: 13.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .site-header .button--ghost {
@@ -334,6 +342,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 10px;
   min-height: auto;
   padding: 13px 24px;
@@ -1612,6 +1621,21 @@ h3 {
 }
 
 @media (max-width: 1100px) {
+  .site-nav {
+    gap: 0.8rem;
+  }
+
+  .site-nav a {
+    padding: 0.25rem 0.56rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .site-header .desktop-cta {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
   .hero-grid {
     gap: 38px;
   }
@@ -1643,6 +1667,20 @@ h3 {
 
 @media (max-width: 920px) {
 
+  .site-header__inner {
+    justify-content: flex-start;
+    gap: 0.5rem;
+    min-height: 4.75rem;
+  }
+
+  .site-header .brand-mark {
+    margin-right: auto;
+  }
+
+  .site-header .brand-mark__logo--full {
+    width: clamp(118px, 35vw, 168px);
+  }
+
   .section,
   .cta-inner {
     padding: var(--section-space-tablet) 0;
@@ -1654,14 +1692,26 @@ h3 {
   }
 
   .nav-toggle {
-    display: inline-block;
+    order: 3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
   }
 
-  .desktop-cta {
-    display: none;
+  .site-header .desktop-cta {
+    order: 2;
+    display: inline-flex;
+    min-height: 2.5rem;
+    padding: 9px 12px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
   }
 
   .site-nav {
+    order: 4;
     position: absolute;
     left: 1rem;
     right: 1rem;
@@ -1805,6 +1855,16 @@ h3 {
 @media (max-width: 640px) {
   .container {
     width: min(var(--max-width), calc(100% - 40px));
+  }
+
+  .site-header .button {
+    width: auto;
+  }
+
+  .site-header .desktop-cta {
+    min-width: 116px;
+    padding: 8px 11px;
+    font-size: 10.5px;
   }
 
   .section,

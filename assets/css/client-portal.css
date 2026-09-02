@@ -58,6 +58,10 @@
 }
 
 .portal-password-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     min-height: 48px;
     min-width: 76px;
     padding: 0 14px;

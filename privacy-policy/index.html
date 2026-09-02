@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/assets/images/agentix_icon_32x32.png" />
   <link rel="apple-touch-icon" href="/assets/images/agentix_icon_32x32.png" />
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20260728a" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20260902f" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LFK4Y2G4D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,60 +39,88 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <div class="page-shell">
-    <div class="privacy-content">
-      <a class="privacy-back" href="/">Back to Agentix</a>
-      <a class="privacy-back" href="/client-portal.html">Client Portal</a>
-      <h1>Privacy Policy</h1>
-      <p class="privacy-updated">Last updated: May 2026</p>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand-mark brand-mark--full" href="/" aria-label="Agentix Technology Advisors home">
+          <img class="brand-mark__logo brand-mark__logo--full" src="/assets/images/agentix_logo_fullres.png" alt="Agentix Technology Advisors logo" />
+        </a>
 
-      <h2>Who we are</h2>
-      <p>Agentix Technology Advisors ("we," "our," or "us") provides consulting and related services.</p>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
 
-      <h2>Information we collect</h2>
-      <ul>
-        <li>Contact details you provide (name, email, phone).</li>
-        <li>Messages and form inputs you submit.</li>
-        <li>Basic device and usage data (for example, IP address and pages visited) via cookies or similar technologies.</li>
-      </ul>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="/#difference">Why Agentix</a>
+          <a href="/#method">How we deliver</a>
+          <a href="/services/">Services</a>
+          <a href="/about/">About us</a>
+          <a href="/contact/">Contact</a>
+        </nav>
 
-      <h2>How we use information</h2>
-      <ul>
-        <li>To provide and improve our services, respond to inquiries, and operate our website.</li>
-        <li>To send administrative updates and, with consent, marketing communications including SMS messages.</li>
-      </ul>
+        <a class="button button--ghost desktop-cta" href="/client-portal.html">CLIENT PORTAL</a>
+      </div>
+    </header>
 
-      <h2>SMS terms (A2P 10DLC compliance)</h2>
-      <p>By providing your mobile number and opting in, you agree to receive SMS messages from Agentix Technology Advisors.</p>
-      <ul>
-        <li><strong>Frequency:</strong> Varies; typically up to a few messages per month.</li>
-        <li><strong>Opt-out:</strong> Text STOP to cancel at any time.</li>
-        <li><strong>Help:</strong> Text HELP for help or contact us at info@agentixadvisors.com.</li>
-        <li><strong>Rates:</strong> Message and data rates may apply.</li>
-        <li><strong>No condition:</strong> Consent is not a condition of purchase.</li>
-        <li><strong>Carriers:</strong> Mobile carriers are not liable for delayed or undelivered messages.</li>
-      </ul>
+    <main id="main-content">
+      <div class="privacy-content">
+        <a class="privacy-back" href="/">Back to Agentix</a>
+        <h1>Privacy Policy</h1>
+        <p class="privacy-updated">Last updated: May 2026</p>
 
-      <h2>Sharing</h2>
-      <p>We do not sell personal information. We may share it with service providers that help us operate our website and messaging, or as required by law.</p>
-      <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with third parties.</p>
+        <h2>Who we are</h2>
+        <p>Agentix Technology Advisors ("we," "our," or "us") provides consulting and related services.</p>
 
-      <h2>Data retention and security</h2>
-      <p>We retain information only as long as necessary for the purposes above and use reasonable safeguards to protect it.</p>
+        <h2>Information we collect</h2>
+        <ul>
+          <li>Contact details you provide (name, email, phone).</li>
+          <li>Messages and form inputs you submit.</li>
+          <li>Basic device and usage data (for example, IP address and pages visited) via cookies or similar technologies.</li>
+        </ul>
 
-      <h2>Your choices</h2>
-      <p>You can unsubscribe from emails via the link in the email. For SMS, reply STOP to opt out. To access, update, or delete your information, contact us.</p>
+        <h2>How we use information</h2>
+        <ul>
+          <li>To provide and improve our services, respond to inquiries, and operate our website.</li>
+          <li>To send administrative updates and, with consent, marketing communications including SMS messages.</li>
+        </ul>
 
-      <h2>Cookies</h2>
-      <p>We use cookies and similar technologies for site functionality and analytics. You can adjust your browser settings to limit cookies.</p>
+        <h2>SMS terms (A2P 10DLC compliance)</h2>
+        <p>By providing your mobile number and opting in, you agree to receive SMS messages from Agentix Technology Advisors.</p>
+        <ul>
+          <li><strong>Frequency:</strong> Varies; typically up to a few messages per month.</li>
+          <li><strong>Opt-out:</strong> Text STOP to cancel at any time.</li>
+          <li><strong>Help:</strong> Text HELP for help or contact us at info@agentixadvisors.com.</li>
+          <li><strong>Rates:</strong> Message and data rates may apply.</li>
+          <li><strong>No condition:</strong> Consent is not a condition of purchase.</li>
+          <li><strong>Carriers:</strong> Mobile carriers are not liable for delayed or undelivered messages.</li>
+        </ul>
 
-      <h2>Contact us</h2>
-      <p>Email: <a href="mailto:info@agentixadvisors.com">info@agentixadvisors.com</a></p>
+        <h2>Sharing</h2>
+        <p>We do not sell personal information. We may share it with service providers that help us operate our website and messaging, or as required by law.</p>
+        <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with third parties.</p>
 
-      <h2>Changes</h2>
-      <p>We may update this policy periodically. We revise the "Last updated" date when we do.</p>
-    </div>
+        <h2>Data retention and security</h2>
+        <p>We retain information only as long as necessary for the purposes above and use reasonable safeguards to protect it.</p>
+
+        <h2>Your choices</h2>
+        <p>You can unsubscribe from emails via the link in the email. For SMS, reply STOP to opt out. To access, update, or delete your information, contact us.</p>
+
+        <h2>Cookies</h2>
+        <p>We use cookies and similar technologies for site functionality and analytics. You can adjust your browser settings to limit cookies.</p>
+
+        <h2>Contact us</h2>
+        <p>Email: <a href="mailto:info@agentixadvisors.com">info@agentixadvisors.com</a></p>
+
+        <h2>Changes</h2>
+        <p>We may update this policy periodically. We revise the "Last updated" date when we do.</p>
+      </div>
+    </main>
   </div>
+
+  <script src="/assets/js/main.js?v=20260728a"></script>
 </body>
 
 </html>
