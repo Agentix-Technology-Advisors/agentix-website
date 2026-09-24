@@ -1438,7 +1438,7 @@ h3 {
 .leader-card__photo {
   width: 164px;
   height: 164px;
-  margin-top: 8px;
+  margin-top: 12px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid rgba(14, 24, 38, 0.14);
