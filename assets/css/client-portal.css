@@ -22,7 +22,7 @@
     display: none !important;
 }
 
-.portal-auth-card h2 {
+.portal-auth-card h1 {
     margin-bottom: 10px;
     font-size: clamp(30px, 3.2vw, 40px);
 }
@@ -54,7 +54,8 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 8px;
-    align-items: center;
+    margin-bottom: 10px;
+    font-size: clamp(30px, 3.2vw, 40px);
 }
 
 .portal-password-toggle {
@@ -211,7 +212,7 @@
 .portal-result-count {
     margin-top: 10px;
     font-size: 14px;
-    color: #6c798c;
+    color: var(--text-subtle);
 }
 
 .portal-voice-list {
@@ -241,6 +242,8 @@
     border-color: rgba(23, 184, 224, 0.48);
     background: #f8fdff;
 }
+
+color: var(--text-subtle);
 
 .portal-voice-controls {
     display: flex;

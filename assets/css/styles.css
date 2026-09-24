@@ -8,6 +8,7 @@
   --text-slate: #45505f;
   --text-light: #e8edf3;
   --text-muted: #93a0b2;
+  --text-subtle: #647184;
   --accent: #17b8e0;
   --accent-hover: #3fcbee;
   --accent-deep: #0e93b5;
@@ -151,7 +152,7 @@ ul {
   display: inline-block;
   margin-bottom: 18px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -297,6 +298,7 @@ h3 {
   border: 1px solid rgba(21, 42, 69, 0.24);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 
 .nav-toggle span {
@@ -410,10 +412,6 @@ h3 {
   gap: 56px;
   align-items: center;
   padding: 102px 0 92px;
-}
-
-.hero-copy .section-tag {
-  font-size: 12px;
 }
 
 .hero-copy h1 {
@@ -765,7 +763,7 @@ h3 {
 .phase-card__index {
   display: block;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-deep);
@@ -898,7 +896,7 @@ h3 {
   line-height: 1.9;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #8a94a3;
+  color: var(--text-subtle);
 }
 
 .cta-section {
@@ -986,7 +984,7 @@ h3 {
   display: inline-block;
   margin-bottom: 18px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -1015,7 +1013,7 @@ h3 {
   box-shadow: var(--shadow-sm);
 }
 
-.services-engagement-card h3 {
+.services-engagement-card h2 {
   margin-bottom: 10px;
   font-size: 22px;
 }
@@ -1060,12 +1058,34 @@ h3 {
 }
 
 .services-bridge-link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 11px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
   color: var(--accent-deep);
   font-family: "Archivo", system-ui, sans-serif;
   font-size: 14.5px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.section--dark .services-bridge-link a {
+  color: var(--accent);
+}
+
+.services-bridge-link a:hover,
+.services-bridge-link a:focus-visible {
+  color: var(--ink);
+  background: var(--accent);
+  transform: translateY(-1px);
 }
 
 .service-grid {
@@ -1170,7 +1190,7 @@ h3 {
   display: inline-block;
   margin-bottom: 10px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-deep);
@@ -1211,7 +1231,7 @@ h3 {
   font-size: 11px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  color: #8a94a3;
+  color: var(--text-subtle);
   line-height: 1.9;
 }
 
@@ -1266,7 +1286,7 @@ h3 {
 .services-stage-visual figcaption {
   padding: 0.56rem 0.78rem 0.62rem;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -1418,6 +1438,7 @@ h3 {
 .leader-card__photo {
   width: 164px;
   height: 164px;
+  margin-top: 8px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid rgba(14, 24, 38, 0.14);
@@ -1434,7 +1455,7 @@ h3 {
   margin-top: 4px;
   margin-bottom: 12px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--accent-deep);
@@ -1600,7 +1621,7 @@ h3 {
   display: inline-block;
   margin-bottom: 22px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-deep);
@@ -1609,10 +1630,15 @@ h3 {
 .privacy-updated {
   margin-bottom: 22px;
   font-size: 13px;
-  color: #6b7688;
+  color: var(--text-subtle);
 }
 
 .reveal-up {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal-up {
   opacity: 0;
   transform: translateY(16px);
   transition:
@@ -1620,7 +1646,7 @@ h3 {
     transform 600ms ease;
 }
 
-.reveal-up.is-visible {
+.js .reveal-up.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1825,6 +1851,7 @@ h3 {
   .leader-card__photo {
     width: 136px;
     height: 136px;
+    margin-top: 0;
   }
 
   .contact-page main>.section:first-child {
@@ -1877,6 +1904,10 @@ h3 {
 @media (max-width: 640px) {
   .container {
     width: min(var(--max-width), calc(100% - 40px));
+  }
+
+  .home-page .problem-grid {
+    grid-template-columns: 1fr;
   }
 
   .site-header .button {

@@ -6,6 +6,7 @@ const siteNav = document.querySelector(".site-nav");
 if (navToggle && siteNav) {
   const closeNav = () => {
     navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Open navigation");
     siteNav.classList.remove("is-open");
     document.body.classList.remove("nav-open");
   };
@@ -13,6 +14,7 @@ if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
     siteNav.classList.toggle("is-open", !isOpen);
     document.body.classList.toggle("nav-open", !isOpen);
   });
