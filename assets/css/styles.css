@@ -129,7 +129,7 @@ ul {
 
 #evaluate,
 #implement,
-#operate,
+#advise,
 #optimize {
   scroll-margin-top: 88px;
 }
@@ -1003,6 +1003,7 @@ h3 {
 }
 
 .services-engagement-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1011,6 +1012,20 @@ h3 {
   border-radius: 8px;
   background: #ffffff;
   box-shadow: var(--shadow-sm);
+}
+
+.services-engagement-icon {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  width: 32px;
+  height: 32px;
+  color: var(--accent-deep);
+  pointer-events: none;
+}
+
+.services-engagement-card>.services-eyebrow {
+  padding-right: 48px;
 }
 
 .services-engagement-card h2 {
