@@ -159,10 +159,6 @@
     margin-bottom: 24px;
 }
 
-.portal-toolbar .section-tag {
-    margin-bottom: 12px;
-}
-
 .portal-toolbar h2 {
     font-size: clamp(32px, 3.2vw, 42px);
     margin-bottom: 8px;
