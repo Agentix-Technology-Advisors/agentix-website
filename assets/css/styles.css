@@ -873,6 +873,9 @@ h3 {
   .blueprint-block { grid-template-columns: 1fr; gap: 20px; }
   .blueprint-drawing { width: min(100%, 460px); justify-self: center; }
 }
+@media (max-width: 360px) {
+  .blueprint-block { padding-inline: 14px; }
+}
 
 .table-shell {
   overflow-x: auto;
