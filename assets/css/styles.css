@@ -635,30 +635,31 @@ h3 {
   font-size: 17px;
 }
 
-.statement-band {
-  padding: var(--section-space) var(--page-gutter);
-  text-align: center;
-  background: linear-gradient(180deg, #08101d 0%, #0d1728 100%);
+.delivery-principle {
+  scroll-margin-top: 110px;
+  margin-top: var(--heading-gap);
+  padding: clamp(20px, 2vw, 28px) var(--card-inset);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background:
+    linear-gradient(100deg, #e2eff2 42%, transparent),
+    url("../images/hero-wide.svg") right center / auto 100% no-repeat,
+    #edf3f4;
+  color: #344f60;
+  font-size: clamp(16px, 1.4vw, 18px);
+  line-height: 1.5;
+  text-wrap: pretty;
 }
 
-.statement-band__text {
-  max-width: 980px;
-  margin: 0 auto;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(30px, 4vw, 50px);
-  font-weight: 500;
-  line-height: 1.24;
-  letter-spacing: -0.014em;
-  color: var(--text-light);
-}
-
-.statement-band__line {
+.delivery-principle strong {
   display: block;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+  font-size: clamp(21px, 2vw, 27px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
   text-wrap: balance;
-}
-
-.statement-band__line+.statement-band__line {
-  margin-top: 0.16em;
 }
 
 .why-grid {
@@ -937,28 +938,6 @@ h3 {
 
 #credentials {
   scroll-margin-top: 100px;
-}
-
-.credential-link {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: center;
-  gap: 0 12px;
-  margin: 18px 0 0;
-  font-size: 15px;
-}
-
-.credential-link strong { color: var(--text-light); }
-.credential-link a {
-  color: #95dbe8;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-}
-.credential-link a:hover { color: #fff; }
-.credential-link a:focus-visible {
-  outline: 2px solid #95dbe8;
-  outline-offset: 3px;
 }
 
 .credential-band {
