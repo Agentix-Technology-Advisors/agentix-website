@@ -404,9 +404,24 @@ h3 {
 }
 
 .hero-section {
-  background: var(--ink);
+  background: linear-gradient(90deg, #09111f 28%, #0b1523 56%, #102131 100%);
   position: relative;
   overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/hero-edge-field.svg") right center / min(72%, 1320px) 100% no-repeat;
+  mask-image: linear-gradient(90deg, transparent 24%, rgb(0 0 0 / .09) 43%, rgb(0 0 0 / .84) 62%, black 78%);
+  pointer-events: none;
 }
 
 .hero-grid {
@@ -428,6 +443,7 @@ h3 {
 .hero-copy .hero-alt {
   color: var(--accent);
   font-style: italic;
+  font-weight: 500;
 }
 
 .hero-sub {
@@ -435,7 +451,7 @@ h3 {
   margin: 24px 0 36px;
   font-size: 17px;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: #afbdcc;
 }
 
 .hero-sub strong {
@@ -510,8 +526,15 @@ h3 {
 }
 
 .home-page .hero-grid {
-  min-height: clamp(560px, 72vh, 760px);
-  padding: 94px 0 88px;
+  min-height: clamp(510px, 62vh, 650px);
+  padding: 72px 0;
+}
+
+@media (min-width: 921px) {
+  .hero-copy h1 {
+    font-size: clamp(64px, 5.6vw, 80px);
+    line-height: 1.03;
+  }
 }
 
 .home-page .hero-copy {
@@ -1737,7 +1760,12 @@ h3 {
 
   .home-page .hero-grid {
     min-height: 0;
-    padding: 86px 0 70px;
+    padding: 64px 0 60px;
+  }
+
+  .hero-section::after {
+    background-size: 77% 100%;
+    mask-image: linear-gradient(90deg, transparent 23%, rgb(0 0 0 / .07) 43%, rgb(0 0 0 / .59) 67%, black 92%);
   }
 
   .nav-toggle {
@@ -1922,6 +1950,14 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  .home-page .hero-grid {
+    padding: 60px 0 54px;
+  }
+
+  .hero-section::after {
+    mask-image: linear-gradient(90deg, transparent 20%, rgb(0 0 0 / .06) 43%, rgb(0 0 0 / .43) 64%, rgb(0 0 0 / .9) 100%);
+  }
+
   .container {
     width: min(var(--max-width), calc(100% - 40px));
   }

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="560" viewBox="0 0 840 560" preserveAspectRatio="xMaxYMid slice" fill="none">
+  <defs>
+    <linearGradient id="steep" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#63889b" stop-opacity=".76"/>
+      <stop offset=".63" stop-color="#82a5b8"/>
+      <stop offset="1" stop-color="#7095ab" stop-opacity=".76"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#steep)">
+    <path d="M423.09 -32L11.93 592" stroke-width=".86" opacity="0.019"/>
+    <path d="M431.09 -32L19.93 592" stroke-width=".86" opacity="0.019"/>
+    <path d="M439.09 -32L27.93 592" stroke-width=".86" opacity="0.019"/>
+    <path d="M447.09 -32L35.93 592" stroke-width=".86" opacity="0.020"/>
+    <path d="M455.09 -32L43.93 592" stroke-width=".86" opacity="0.020"/>
+    <path d="M463.09 -32L51.93 592" stroke-width=".86" opacity="0.021"/>
+    <path d="M471.09 -32L59.93 592" stroke-width=".86" opacity="0.022"/>
+    <path d="M479.09 -32L67.93 592" stroke-width=".86" opacity="0.024"/>
+    <path d="M487.09 -32L75.93 592" stroke-width=".86" opacity="0.027"/>
+    <path d="M495.09 -32L83.93 592" stroke-width=".86" opacity="0.031"/>
+    <path d="M503.09 -32L91.93 592" stroke-width=".86" opacity="0.037"/>
+    <path d="M511.09 -32L99.93 592" stroke-width=".86" opacity="0.044"/>
+    <path d="M519.09 -32L107.93 592" stroke-width=".86" opacity="0.053"/>
+    <path d="M527.09 -32L115.93 592" stroke-width=".86" opacity="0.064"/>
+    <path d="M535.09 -32L123.93 592" stroke-width=".86" opacity="0.153"/>
+    <path d="M543.09 -32L131.93 592" stroke-width=".86" opacity="0.094"/>
+    <path d="M551.09 -32L139.93 592" stroke-width=".86" opacity="0.111"/>
+    <path d="M559.09 -32L147.93 592" stroke-width=".86" opacity="0.130"/>
+    <path d="M567.09 -32L155.93 592" stroke-width=".86" opacity="0.148"/>
+    <path d="M575.09 -32L163.93 592" stroke-width=".86" opacity="0.166"/>
+    <path d="M583.09 -32L171.93 592" stroke-width=".86" opacity="0.182"/>
+    <path d="M591.09 -32L179.93 592" stroke-width=".86" opacity="0.195"/>
+    <path d="M599.09 -32L187.93 592" stroke-width=".86" opacity="0.204"/>
+    <path d="M607.09 -32L195.93 592" stroke-width=".86" opacity="0.209"/>
+    <path d="M615.09 -32L203.93 592" stroke-width=".86" opacity="0.208"/>
+    <path d="M623.09 -32L211.93 592" stroke-width=".86" opacity="0.202"/>
+    <path d="M631.09 -32L219.93 592" stroke-width=".86" opacity="0.192"/>
+    <path d="M639.09 -32L227.93 592" stroke-width=".86" opacity="0.178"/>
+    <path d="M647.09 -32L235.93 592" stroke-width=".86" opacity="0.162"/>
+    <path d="M655.09 -32L243.93 592" stroke-width=".86" opacity="0.144"/>
+    <path d="M663.09 -32L251.93 592" stroke-width=".86" opacity="0.200"/>
+    <path d="M671.09 -32L259.93 592" stroke-width=".86" opacity="0.107"/>
+    <path d="M679.09 -32L267.93 592" stroke-width=".86" opacity="0.090"/>
+    <path d="M687.09 -32L275.93 592" stroke-width=".86" opacity="0.075"/>
+    <path d="M695.09 -32L283.93 592" stroke-width=".86" opacity="0.062"/>
+    <path d="M703.09 -32L291.93 592" stroke-width=".86" opacity="0.052"/>
+    <path d="M711.09 -32L299.93 592" stroke-width=".86" opacity="0.044"/>
+    <path d="M719.09 -32L307.93 592" stroke-width=".86" opacity="0.040"/>
+    <path d="M727.09 -32L315.93 592" stroke-width=".86" opacity="0.038"/>
+    <path d="M735.09 -32L323.93 592" stroke-width=".86" opacity="0.040"/>
+    <path d="M743.09 -32L331.93 592" stroke-width=".86" opacity="0.046"/>
+    <path d="M751.09 -32L339.93 592" stroke-width=".86" opacity="0.056"/>
+    <path d="M759.09 -32L347.93 592" stroke-width=".86" opacity="0.069"/>
+    <path d="M767.09 -32L355.93 592" stroke-width=".86" opacity="0.085"/>
+    <path d="M775.09 -32L363.93 592" stroke-width=".86" opacity="0.102"/>
+    <path d="M783.09 -32L371.93 592" stroke-width=".86" opacity="0.119"/>
+    <path d="M791.09 -32L379.93 592" stroke-width=".86" opacity="0.133"/>
+    <path d="M799.09 -32L387.93 592" stroke-width=".86" opacity="0.141"/>
+    <path d="M807.09 -32L395.93 592" stroke-width=".86" opacity="0.144"/>
+    <path d="M815.09 -32L403.93 592" stroke-width=".86" opacity="0.140"/>
+    <path d="M823.09 -32L411.93 592" stroke-width=".86" opacity="0.129"/>
+    <path d="M831.09 -32L419.93 592" stroke-width=".86" opacity="0.114"/>
+    <path d="M839.09 -32L427.93 592" stroke-width=".86" opacity="0.172"/>
+    <path d="M847.09 -32L435.93 592" stroke-width=".86" opacity="0.079"/>
+    <path d="M855.09 -32L443.93 592" stroke-width=".86" opacity="0.063"/>
+    <path d="M863.09 -32L451.93 592" stroke-width=".86" opacity="0.050"/>
+    <path d="M871.09 -32L459.93 592" stroke-width=".86" opacity="0.039"/>
+    <path d="M879.09 -32L467.93 592" stroke-width=".86" opacity="0.031"/>
+  </g>
+  <g stroke="#7a9aad">
+    <path d="M-32 823.90L880 343.95" stroke-width=".82" opacity="0.056"/>
+    <path d="M-32 831.90L880 351.95" stroke-width=".82" opacity="0.070"/>
+    <path d="M-32 839.90L880 359.95" stroke-width=".82" opacity="0.147"/>
+    <path d="M-32 847.90L880 367.95" stroke-width=".82" opacity="0.105"/>
+    <path d="M-32 855.90L880 375.95" stroke-width=".82" opacity="0.125"/>
+    <path d="M-32 863.90L880 383.95" stroke-width=".82" opacity="0.145"/>
+    <path d="M-32 871.90L880 391.95" stroke-width=".82" opacity="0.165"/>
+    <path d="M-32 879.90L880 399.95" stroke-width=".82" opacity="0.181"/>
+    <path d="M-32 887.90L880 407.95" stroke-width=".82" opacity="0.194"/>
+    <path d="M-32 895.90L880 415.95" stroke-width=".82" opacity="0.201"/>
+    <path d="M-32 903.90L880 423.95" stroke-width=".82" opacity="0.203"/>
+    <path d="M-32 911.90L880 431.95" stroke-width=".82" opacity="0.198"/>
+    <path d="M-32 919.90L880 439.95" stroke-width=".82" opacity="0.188"/>
+    <path d="M-32 927.90L880 447.95" stroke-width=".82" opacity="0.173"/>
+    <path d="M-32 935.90L880 455.95" stroke-width=".82" opacity="0.155"/>
+    <path d="M-32 943.90L880 463.95" stroke-width=".82" opacity="0.135"/>
+    <path d="M-32 951.90L880 471.95" stroke-width=".82" opacity="0.175"/>
+    <path d="M-32 959.90L880 479.95" stroke-width=".82" opacity="0.096"/>
+    <path d="M-32 967.90L880 487.95" stroke-width=".82" opacity="0.078"/>
+    <path d="M-32 975.90L880 495.95" stroke-width=".82" opacity="0.063"/>
+    <path d="M-32 983.90L880 503.95" stroke-width=".82" opacity="0.051"/>
+    <path d="M-32 991.90L880 511.95" stroke-width=".82" opacity="0.041"/>
+    <path d="M-32 999.90L880 519.95" stroke-width=".82" opacity="0.033"/>
+    <path d="M-32 1007.90L880 527.95" stroke-width=".82" opacity="0.028"/>
+    <path d="M-32 1015.90L880 535.95" stroke-width=".82" opacity="0.024"/>
+    <path d="M-32 1023.90L880 543.95" stroke-width=".82" opacity="0.022"/>
+    <path d="M-32 1031.90L880 551.95" stroke-width=".82" opacity="0.020"/>
+    <path d="M-32 1039.90L880 559.95" stroke-width=".82" opacity="0.019"/>
+    <path d="M-32 1047.90L880 567.95" stroke-width=".82" opacity="0.019"/>
+  </g>
+</svg>
