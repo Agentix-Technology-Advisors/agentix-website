@@ -10,6 +10,7 @@
   --text-muted: #93a0b2;
   --text-subtle: #647184;
   --accent: #17b8e0;
+  --label-cyan: #006f88;
   --accent-hover: #3fcbee;
   --accent-deep: #146579;
   --header-bg: rgba(255, 255, 255, 0.97);
@@ -157,15 +158,19 @@ ul {
   font-size: 17px;
 }
 
+:where(.hero-section, .section--dark, .cta-section, .services-hero, .services-summary, .credential-band, .contact-copy, .blueprint-block) {
+  --label-cyan: var(--accent);
+}
+
 .section-tag {
   display: block;
   margin-bottom: 12px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--label-cyan);
 }
 
 .services-page-intro h1,
@@ -572,7 +577,7 @@ h3 {
 
 @media (min-width: 921px) {
   .hero-copy h1 {
-    font-size: clamp(64px, 5.6vw, 80px);
+    font-size: clamp(64px, 6.25vw, 90px);
     line-height: 1.03;
   }
 }
@@ -791,10 +796,10 @@ h3 {
 .phase-card__index {
   display: block;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--label-cyan);
 }
 
 .phase-card h3 {
@@ -813,36 +818,24 @@ h3 {
 #agentblueprint { scroll-margin-top: 100px; }
 .blueprint-block {
   display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
   align-items: center;
   gap: clamp(24px, 3.5vw, 48px);
   margin-top: var(--heading-gap);
   padding: clamp(20px, 3vw, 40px);
-  background: #102234;
+  background: linear-gradient(110deg, #102234 45%, #142e3e);
   color: #c6d3df;
   border-radius: var(--radius-md);
 }
 .blueprint-block h3 { margin: 0; }
 .blueprint-block h3 img { display: block; width: min(100%, 340px); height: auto; }
 .blueprint-description {
-  position: relative;
-  padding: clamp(16px, 2vw, 24px) clamp(18px, 2.4vw, 30px);
-  border: 1px solid #37596a;
-  border-radius: var(--radius-sm);
-  background: linear-gradient(110deg, #19384a, #172d3e);
+  max-width: 64ch;
+  margin-top: 20px;
   color: #c8d9e3;
   font-size: 15px;
   line-height: 1.55;
-}
-.blueprint-description::before {
-  content: "";
-  position: absolute;
-  top: clamp(16px, 2vw, 24px);
-  left: -1px;
-  width: 2px;
-  height: 1.55em;
-  border-radius: 2px;
-  background: var(--accent);
+  text-wrap: pretty;
 }
 .blueprint-description strong {
   display: block;
@@ -850,9 +843,35 @@ h3 {
   color: var(--text-light);
   font-size: 16px;
   font-weight: 600;
+  text-wrap: balance;
 }
+.blueprint-drawing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 10px clamp(12px, 1.6vw, 24px) 10px 0;
+  margin: 0;
+  border: 1px solid #345360;
+  border-radius: var(--radius-sm);
+  background:
+    radial-gradient(circle, #70afbd26 0.7px, transparent 1px) 0 0 / 14px 14px,
+    radial-gradient(ellipse at 39% 42%, #183c4e, #102534 70%);
+}
+.blueprint-drawing img { display: block; width: 100%; height: auto; }
+.blueprint-legend {
+  display: grid;
+  /* Match the five leader endpoints in the 258-unit drawing. */
+  grid-template-rows: 43fr repeat(4, 40fr) 55fr;
+  align-items: end;
+  padding: 0;
+  margin: 0 0 0 6px;
+  list-style: none;
+  color: #b5d2dc;
+  font: 500 clamp(11px, 1vw, 13px)/1.2 "IBM Plex Mono", monospace;
+}
+.blueprint-legend li { transform: translateY(50%); }
 @media (max-width: 760px) {
   .blueprint-block { grid-template-columns: 1fr; gap: 20px; }
+  .blueprint-drawing { width: min(100%, 460px); justify-self: center; }
 }
 
 .table-shell {
@@ -1166,11 +1185,7 @@ h3 {
 }
 
 .services-page-intro h1 {
-  color: #f5f7f9;
-}
-
-.services-page-intro h1 span {
-  color: #b8e5eb;
+  color: #fff;
 }
 
 .services-index {
@@ -1766,10 +1781,10 @@ h3 {
   margin-top: 4px;
   margin-bottom: 12px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--label-cyan);
 }
 
 .leader-card__bio {

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="258" viewBox="0 0 310 258" fill="none">
+  <defs>
+    <path id="plate" d="M5 0h90l5 5v90l-5 5H5l-5-5V5Z"/>
+    <linearGradient id="glass" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23586b"/>
+      <stop offset="1" stop-color="#183849"/>
+    </linearGradient>
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M10 0H0v10" stroke="#8bc8d1" stroke-opacity=".2" stroke-width=".65"/>
+    </pattern>
+    <g id="rim" transform="translate(4.25 4.25)" stroke-linejoin="round">
+      <use href="#plate" fill="#112937" stroke="#7098a6" stroke-width=".9"/>
+      <path d="M100 80v12l-8 8H74M8 100H5l-5-5v-9" stroke="#a0d2dc" stroke-width="1.5"/>
+    </g>
+    <g id="pins" fill="#a4d7df">
+      <circle cx="8" cy="8" r="1.2"/><circle cx="92" cy="8" r="1.2"/>
+      <circle cx="92" cy="92" r="1.2"/><circle cx="8" cy="92" r="1.2"/>
+    </g>
+    <g id="surface">
+      <use href="#rim"/>
+      <use href="#plate" fill="currentColor" stroke="#80b2bf"/>
+      <use href="#plate" fill="url(#grid)"/>
+      <use href="#pins"/>
+    </g>
+  </defs>
+
+  <g stroke="#65909f" stroke-width=".75" stroke-dasharray="2 4" opacity=".7">
+    <path d="M45 59v143m198-143v143M144 12v144m0 84v11"/>
+    <path d="m40 203 104-47 104 47-104 47Z"/>
+  </g>
+
+  <!-- Plates are painted back to front so their exposed edges carry each symbol. -->
+  <g id="deploy" transform="matrix(1.04 .47 -1.04 .47 144 144)">
+    <use href="#surface" color="#193544"/>
+    <path d="M62 85h23m-7-7 7 7-7 7M54 80v10m-5-8v6" stroke="#9adbe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="trace-logs" transform="matrix(1.04 .47 -1.04 .47 144 111)">
+    <use href="#surface" color="#1b3949"/>
+    <g stroke="#8bc7d2" stroke-width="1.6" stroke-linecap="round">
+      <path d="M58 77h2m5 0h22M58 83h2m5 0h15M58 89h2m5 0h19"/>
+    </g>
+  </g>
+
+  <g id="validation" transform="matrix(1.04 .47 -1.04 .47 144 78)">
+    <use href="#surface" color="#214353"/>
+    <path d="m50 82 3 3 7-8m3 5 3 3 7-8m3 5 3 3 7-8" stroke="#a2dce1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="connectors" transform="matrix(1.04 .47 -1.04 .47 144 45)">
+    <use href="#surface" color="#204656"/>
+    <g stroke="#9adbe0" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M53 87h14l8-8h9"/>
+      <path d="M47 84h7v6h-7zm37-8h7v6h-7z" fill="#245566"/>
+    </g>
+  </g>
+
+  <g id="configuration" transform="matrix(1.04 .47 -1.04 .47 144 12)" stroke-linejoin="round">
+    <use href="#rim"/>
+    <use href="#plate" fill="url(#glass)" stroke="#a5dbe2" stroke-width="1.2"/>
+    <use href="#plate" fill="url(#grid)"/>
+    <path d="M9 69V14l5-5h68m9 30v48l-4 4H24" stroke="#6aa7b5" stroke-width=".7"/>
+    <g stroke-linecap="round">
+      <path d="M22 69h20l18-18h22" stroke="#6be4ed" stroke-opacity=".18" stroke-width="7"/>
+      <path d="M22 69h20l18-18h22" stroke="#8ff5f6" stroke-width="2.6"/>
+      <path d="M42 69V40l12-12h19" stroke="#6fc7d6" stroke-width="1.7"/>
+    </g>
+    <g fill="#164051" stroke="#a2eef1" stroke-width="1.7">
+      <circle cx="22" cy="69" r="3.5"/><circle cx="42" cy="69" r="3.5"/>
+      <circle cx="82" cy="51" r="3.5"/><circle cx="73" cy="28" r="2.8"/>
+    </g>
+    <use href="#pins"/>
+  </g>
+
+  <g id="leaders" stroke="#6995a5" stroke-width=".9">
+    <path d="M243 59h11l26-16h30"/>
+    <path d="M243 92h18l16-9h33"/>
+    <path d="M243 125h23l4-2h40"/>
+    <path d="M243 158h19l9 5h39"/>
+    <path d="M243 191h13l21 12h33"/>
+  </g>
+  <g fill="#99dbe5">
+    <circle cx="243" cy="59" r="2"/><circle cx="243" cy="92" r="2"/>
+    <circle cx="243" cy="125" r="2"/><circle cx="243" cy="158" r="2"/>
+    <circle cx="243" cy="191" r="2"/>
+  </g>
+</svg>
