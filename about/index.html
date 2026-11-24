@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/assets/images/agentix_icon_32x32.png" />
   <link rel="apple-touch-icon" href="/assets/images/agentix_icon_32x32.png" />
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20261124a" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261124w" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LFK4Y2G4D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -76,60 +76,92 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="/#difference">Why Agentix</a>
-          <a href="/#method">How we deliver</a>
+          <a href="/#method">How We Deliver</a>
           <a href="/services/">Services</a>
-          <a class="is-active" href="/about/" aria-current="page">About us</a>
+          <a class="is-active" href="/about/" aria-current="page">About Us</a>
           <a href="/contact/">Contact Us</a>
+          <a href="/client-portal.html">Client Portal</a>
         </nav>
-
-        <a class="button button--ghost desktop-cta" href="/client-portal.html">CLIENT PORTAL</a>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="section">
-        <div class="container">
-          <article class="about-statement reveal-up">
-            <div class="about-statement__lead">
-              <div>
-                <span class="section-tag">Specialization</span>
-                <h1>A technology partner with certified expertise</h1>
-                <p>Agentix helps enterprises design, deploy, and optimize AI-powered customer engagement and communications. We are proud to hold Zoom Strategic Advisor status, its highest partner level, and are certified to deploy and support Zoom Phone, Zoom Contact Center, and Zoom Virtual Agent. Our expertise also spans the broader CX ecosystem.</p>
-              </div>
-              <figure class="about-badge-card about-inline-badge" aria-label="Partner and accreditation badge">
-                <img src="/assets/images/ZoomUpServiceBadge.png?v=20261015" alt="2026 Zoom Up Partner Program certifications and strategic advisor recognitions" loading="lazy" decoding="async" />
-              </figure>
-            </div>
+      <section class="about-overview" aria-labelledby="about-heading">
+        <div class="container about-overview__panel">
+          <div class="about-statement__lead">
+            <span class="section-tag">Specialization</span>
+            <h1 id="about-heading">A technology partner with certified expertise</h1>
+            <p>Agentix helps enterprises design, deploy, and optimize AI-powered customer engagement and communications. Our expertise also spans the broader CX ecosystem.</p>
+          </div>
 
-            <section class="about-tech-stack" aria-label="Technologies we work with">
-              <h2>Technologies we work with</h2>
-              <div class="about-tech-logos">
-                <figure class="about-tech-logo"><img class="about-tech-logo__img--zoom" src="/assets/images/zoom.webp" alt="Zoom logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img class="about-tech-logo__img--dialpad" src="/assets/images/dialpad.webp" alt="Dialpad logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img src="/assets/images/genesys.webp" alt="Genesys logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img src="/assets/images/twilio.webp" alt="Twilio logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img class="about-tech-logo__img--hubspot" src="/assets/images/hubspot.webp" alt="HubSpot logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img src="/assets/images/freshworks.webp" alt="Freshworks logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img class="about-tech-logo__img--intercom" src="/assets/images/intercom.webp" alt="Intercom logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img src="/assets/images/google.webp" alt="Google logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img src="/assets/images/aws.webp" alt="AWS logo" loading="lazy" decoding="async" /></figure>
-                <figure class="about-tech-logo"><img class="about-tech-logo__img--cisco" src="/assets/images/cisco.webp" alt="Cisco logo" loading="lazy" decoding="async" /></figure>
-              </div>
-            </section>
-          </article>
+          <section class="credential-band" id="credentials" aria-labelledby="credentials-heading" tabindex="-1">
+            <img class="credential-badge" src="/assets/images/ZoomUpServiceBadge.png?v=20261015" width="973" height="2058" alt="2026 Zoom Up Partner Program Strategic Advisor services badge" loading="lazy" decoding="async" />
+            <div class="credential-heading">
+              <span class="section-tag">Flagship practice</span>
+              <h2 id="credentials-heading">Zoom Strategic Advisor</h2>
+            </div>
+            <table class="credential-coverage">
+              <caption class="visually-hidden">Agentix partner certifications by Zoom product</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col"><span class="credential-prefix">Certified</span> Deployment <span class="credential-suffix">Partner</span></th>
+                  <th scope="col"><span class="credential-prefix">Certified</span> Support <span class="credential-suffix">Partner</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Zoom Phone</th>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Zoom Contact Center</th>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Zoom Virtual Agent</th>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Zoom Workplace</th>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                  <td><span class="credential-check" aria-hidden="true"></span><span class="visually-hidden">Certified</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="about-tech-stack" aria-label="Technologies we work with">
+            <h2>Technologies we work with</h2>
+            <div class="about-tech-logos">
+              <figure class="about-tech-logo"><img class="about-tech-logo__img--zoom" src="/assets/images/zoom.webp" alt="Zoom logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img class="about-tech-logo__img--dialpad" src="/assets/images/dialpad.webp" alt="Dialpad logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img src="/assets/images/genesys.webp" alt="Genesys logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img src="/assets/images/twilio.webp" alt="Twilio logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img class="about-tech-logo__img--hubspot" src="/assets/images/hubspot.webp" alt="HubSpot logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img src="/assets/images/freshworks.webp" alt="Freshworks logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img class="about-tech-logo__img--intercom" src="/assets/images/intercom.webp" alt="Intercom logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img src="/assets/images/google.webp" alt="Google logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img src="/assets/images/aws.webp" alt="AWS logo" loading="lazy" decoding="async" /></figure>
+              <figure class="about-tech-logo"><img class="about-tech-logo__img--cisco" src="/assets/images/cisco.webp" alt="Cisco logo" loading="lazy" decoding="async" /></figure>
+            </div>
+          </section>
         </div>
       </section>
 
-      <section class="section">
+      <section class="about-leadership" aria-labelledby="leadership-heading">
         <div class="container">
-          <div class="section-head reveal-up">
+          <div class="section-head">
             <span class="section-tag">Leadership</span>
-            <h2>Senior leadership, backed by a specialist team</h2>
+            <h2 id="leadership-heading">Senior leadership, backed by a specialist team</h2>
             <p>Agentix brings together a team of CX, AI, and engineering talent with deep technical fluency and hands-on delivery experience. Founded in California by Eddie Moon and Berk Vogelheim, with Michael Stewart joining the leadership team in 2026, Agentix helps organizations move from strategy to implementation with clarity, speed, and discipline.</p>
           </div>
 
           <div class="leader-grid">
-            <article class="leader-card reveal-up">
+            <article class="leader-card">
               <img class="leader-card__photo" src="/assets/images/eddie.webp" alt="Portrait of Eddie Moon" loading="lazy" decoding="async" />
               <div>
                 <p class="leader-card__name">Eddie Moon</p>
@@ -139,7 +171,7 @@
               </div>
             </article>
 
-            <article class="leader-card reveal-up">
+            <article class="leader-card">
               <img class="leader-card__photo" src="/assets/images/berk.webp" alt="Portrait of Berk Vogelheim" loading="lazy" decoding="async" />
               <div>
                 <p class="leader-card__name">Berk Vogelheim</p>
@@ -149,7 +181,7 @@
               </div>
             </article>
 
-            <article class="leader-card reveal-up">
+            <article class="leader-card">
               <img class="leader-card__photo" src="/assets/images/michael.webp" alt="Portrait of Michael Stewart" loading="lazy" decoding="async" />
               <div>
                 <p class="leader-card__name">Michael Stewart</p>
@@ -168,7 +200,7 @@
             <span class="section-tag">Start here</span>
             <h2>Ready to modernize your <span class="hero-alt">customer experience?</span></h2>
             <p>Start with a consultation to assess your current environment, define priorities, and identify where AI is useful.</p>
-            <a class="button button--primary button--booking" href="https://scheduler.zoom.us/agentix/30-min-meeting-with-agentix-deals-team" target="_blank" rel="noopener">Book a 30-minute consultation</a>
+            <a class="button button--primary button--booking" href="https://scheduler.zoom.us/agentix/30-min-meeting-with-agentix-deals-team" target="_blank" rel="noopener">Book a 30-Minute Consultation</a>
           </div>
         </div>
       </section>
@@ -179,9 +211,9 @@
         <span>© 2026 Agentix Technology Advisors</span>
         <div class="footer-links">
           <a href="/#difference">Why Agentix</a>
-          <a href="/#method">How we deliver</a>
+          <a href="/#method">How We Deliver</a>
           <a href="/services/">Services</a>
-          <a href="/about/">About us</a>
+          <a href="/about/">About Us</a>
           <a href="/contact/">Contact Us</a>
           <a href="tel:+14083596640">408-359-6640</a>
           <a href="mailto:info@agentixadvisors.com">info@agentixadvisors.com</a>
@@ -192,7 +224,7 @@
     </footer>
   </div>
 
-  <script src="/assets/js/main.js?v=20260925a"></script>
+  <script src="/assets/js/main.js?v=20261124m"></script>
 </body>
 
 </html>

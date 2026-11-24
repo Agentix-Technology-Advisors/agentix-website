@@ -25,9 +25,15 @@ if (navToggle && siteNav) {
     });
   });
 
+  const desktopNav = window.matchMedia("(min-width: 1101px)");
+  desktopNav.addEventListener("change", (event) => {
+    if (event.matches) closeNav();
+  });
+
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
       closeNav();
+      navToggle.focus();
     }
   });
 
@@ -71,4 +77,37 @@ if ("IntersectionObserver" in window) {
   document.querySelectorAll(".reveal-up").forEach((element) => {
     element.classList.add("is-visible");
   });
+}
+
+const heroBooking = document.querySelector(".hero-actions .button--booking");
+const headerBooking = document.querySelector(".header-booking");
+
+if (heroBooking && headerBooking) {
+  const header = headerBooking.closest("header");
+  const closingBooking = document.querySelector("#cta .button--booking");
+  let frame = 0;
+
+  function syncBooking() {
+    frame = 0;
+    const top = header.getBoundingClientRect().bottom;
+    const closing = closingBooking?.getBoundingClientRect();
+    const closingVisible = closing && closing.top < window.innerHeight && closing.bottom > top;
+    const show = heroBooking.getBoundingClientRect().bottom <= top && !closingVisible;
+    headerBooking.toggleAttribute("data-visible", show || document.activeElement === headerBooking);
+  }
+
+  function scheduleBooking() {
+    if (!frame) frame = requestAnimationFrame(syncBooking);
+  }
+
+  window.addEventListener("scroll", scheduleBooking, { passive: true });
+  window.addEventListener("resize", scheduleBooking);
+  window.addEventListener("pageshow", scheduleBooking);
+  headerBooking.addEventListener("blur", scheduleBooking);
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(scheduleBooking);
+    observer.observe(header);
+    observer.observe(document.body);
+  }
+  syncBooking();
 }

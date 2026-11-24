@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/assets/images/agentix_icon_32x32.png" />
   <link rel="apple-touch-icon" href="/assets/images/agentix_icon_32x32.png" />
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20261124a" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261124v" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LFK4Y2G4D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -76,108 +76,184 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="/#difference">Why Agentix</a>
-          <a href="/#method">How we deliver</a>
+          <a href="/#method">How We Deliver</a>
           <a class="is-active" href="/services/" aria-current="page">Services</a>
-          <a href="/about/">About us</a>
+          <a href="/about/">About Us</a>
           <a href="/contact/">Contact Us</a>
+          <a href="/client-portal.html">Client Portal</a>
         </nav>
-
-        <a class="button button--ghost desktop-cta" href="/client-portal.html">CLIENT PORTAL</a>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="section" id="services-engagements">
+      <header class="services-hero" id="services-engagements">
         <div class="container">
-          <div class="page-intro services-page-intro reveal-up">
-            <span class="services-eyebrow">Professional services</span>
-            <h1>Support across the CX lifecycle</h1>
-            <p>From platform evaluation and solution design through deployment, expert advisory, and continuous improvement.</p>
+          <div class="services-page-intro">
+            <span class="section-tag">Professional Services</span>
+            <h1>CX <span>practice areas</span></h1>
           </div>
-
-          <div class="services-engagement-grid">
-            <article class="services-engagement-card reveal-up" id="evaluate">
-              <svg class="services-engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="7"></circle>
-                <path d="m20 20-4-4"></path>
-                <path d="M8 11h6M11 8v6"></path>
+          <nav class="services-index" aria-label="Explore CX practice areas">
+            <a href="#evaluate">
+              <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <g id="practice-icon-evaluate">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="m20 20-4-4"></path>
+                  <path d="M8 11h6M11 8v6"></path>
+                </g>
               </svg>
-              <span class="services-eyebrow">Evaluate</span>
-              <h2>Executive Advisory</h2>
+              <span class="services-index-arrow" aria-hidden="true">↘</span>
+              <span class="practice-name">Platform Strategy</span>
+              <span class="practice-offer">Executive Advisory</span>
+            </a>
+            <a href="#implement">
+              <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <g id="practice-icon-implement">
+                  <rect x="3" y="3" width="6" height="6" rx="1"></rect>
+                  <rect x="15" y="15" width="6" height="6" rx="1"></rect>
+                  <path d="M9 6h4a2 2 0 0 1 2 2v7M6 9v4a2 2 0 0 0 2 2h7"></path>
+                </g>
+              </svg>
+              <span class="services-index-arrow" aria-hidden="true">↘</span>
+              <span class="practice-name">Solution Delivery</span>
+              <span class="practice-offer">Implementation Projects</span>
+            </a>
+            <a href="#advise">
+              <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <g id="practice-icon-advise">
+                  <circle cx="6" cy="18" r="2"></circle>
+                  <circle cx="18" cy="6" r="2"></circle>
+                  <path d="M8 18h3a7 7 0 0 0 7-7V8"></path>
+                  <path d="m14 10 4-4 4 4"></path>
+                </g>
+              </svg>
+              <span class="services-index-arrow" aria-hidden="true">↘</span>
+              <span class="practice-name">Technical Consulting</span>
+              <span class="practice-offer">Consulting Hours</span>
+            </a>
+            <a href="#optimize">
+              <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <g id="practice-icon-optimize">
+                  <path d="M3 12h4l3-7 4 14 3-7h4"></path>
+                </g>
+              </svg>
+              <span class="services-index-arrow" aria-hidden="true">↘</span>
+              <span class="practice-name">CX Operations</span>
+              <span class="practice-offer">CX Accelerator Plans</span>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="section services-details" aria-label="Engagement scopes">
+        <div class="container">
+          <div class="services-engagements">
+            <article class="services-engagement" id="evaluate" aria-labelledby="evaluate-heading" tabindex="-1">
+              <header class="services-summary">
+                <div>
+                  <span class="section-tag">Platform Strategy</span>
+                  <h2 id="evaluate-heading">Executive Advisory</h2>
+                </div>
+                <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#practice-icon-evaluate"></use></svg>
+              </header>
               <p class="services-engagement-desc">Technical and commercial guidance for organizations evaluating CX platforms, architectures, and investment decisions.</p>
-              <ul class="services-engagement-list">
-                <li>Platform and vendor evaluation</li>
-                <li>Solution architecture and technical review</li>
-                <li>Proof-of-concept planning and guidance</li>
-                <li>Demo strategy and evaluation requirements</li>
-                <li>Security and integration considerations</li>
-                <li>Licensing, consumption, and cost modeling</li>
-                <li>RFP strategy and response support</li>
-              </ul>
+              <div class="services-scope">
+                <div>
+                  <h3>Platform Assessment</h3>
+                  <ul>
+                    <li>Assess architecture, security, and integrations</li>
+                    <li>Plan proofs of concept</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Vendor Selection</h3>
+                  <ul>
+                    <li>Compare demos and RFP responses</li>
+                    <li>Model licensing and usage costs</li>
+                  </ul>
+                </div>
+              </div>
             </article>
 
-            <article class="services-engagement-card reveal-up" id="implement">
-              <svg class="services-engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="3" width="6" height="6" rx="1"></rect>
-                <rect x="15" y="15" width="6" height="6" rx="1"></rect>
-                <path d="M9 6h4a2 2 0 0 1 2 2v7M6 9v4a2 2 0 0 0 2 2h7"></path>
-              </svg>
-              <span class="services-eyebrow">Implement</span>
-              <h2>Implementation Services</h2>
+            <article class="services-engagement" id="implement" aria-labelledby="implement-heading" tabindex="-1">
+              <header class="services-summary">
+                <div>
+                  <span class="section-tag">Solution Delivery</span>
+                  <h2 id="implement-heading">Implementation Projects</h2>
+                </div>
+                <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#practice-icon-implement"></use></svg>
+              </header>
               <p class="services-engagement-desc">Structured deployment services for CX solutions, led by experienced solution architects and delivery professionals.</p>
-              <ul class="services-engagement-list">
-                <li>Solution design and deployment planning</li>
-                <li>Platform setup and service configuration</li>
-                <li>Routing, workflows, and business logic</li>
-                <li>Integration and data-flow enablement</li>
-                <li>Testing, validation, and launch readiness</li>
-                <li>Go-live support and operational handoff</li>
-                <li>Administrator enablement and knowledge transfer</li>
-              </ul>
+              <div class="services-scope">
+                <div>
+                  <h3>Design &amp; Configuration</h3>
+                  <ul>
+                    <li>Design and configure your platform</li>
+                    <li>Build routing, workflows, and integrations</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Launch &amp; Handoff</h3>
+                  <ul>
+                    <li>Test configurations and support go-live</li>
+                    <li>Train admins and hand over operations</li>
+                  </ul>
+                </div>
+              </div>
             </article>
 
-            <article class="services-engagement-card reveal-up" id="advise">
-              <svg class="services-engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="6" cy="18" r="2"></circle>
-                <circle cx="18" cy="6" r="2"></circle>
-                <path d="M8 18h3a7 7 0 0 0 7-7V8"></path>
-                <path d="m14 10 4-4 4 4"></path>
-              </svg>
-              <span class="services-eyebrow">Advise</span>
-              <h2>Consulting Services</h2>
+            <article class="services-engagement" id="advise" aria-labelledby="advise-heading" tabindex="-1">
+              <header class="services-summary">
+                <div>
+                  <span class="section-tag">Technical Consulting</span>
+                  <h2 id="advise-heading">Consulting Hours</h2>
+                </div>
+                <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#practice-icon-advise"></use></svg>
+              </header>
               <p class="services-engagement-desc">Flexible access to experienced CX specialists for technical guidance, troubleshooting, planning, and operational support.</p>
-              <ul class="services-engagement-list">
-                <li>Product and configuration guidance</li>
-                <li>Troubleshooting and issue analysis</li>
-                <li>Architecture and solution-design support</li>
-                <li>Configuration and workflow reviews</li>
-                <li>Enhancement planning and prioritization</li>
-                <li>Administrator coaching and enablement</li>
-                <li>Support for evolving technical requirements</li>
-              </ul>
+              <div class="services-scope">
+                <div>
+                  <h3>Technical Guidance</h3>
+                  <ul>
+                    <li>Review architecture and design options</li>
+                    <li>Coach your administrators</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Configuration &amp; Development</h3>
+                  <ul>
+                    <li>Troubleshoot configurations and workflows</li>
+                    <li>Plan and prioritize enhancements</li>
+                  </ul>
+                </div>
+              </div>
             </article>
 
-            <article class="services-engagement-card reveal-up" id="optimize">
-              <svg class="services-engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 12h4l3-7 4 14 3-7h4"></path>
-              </svg>
-              <span class="services-eyebrow">Optimize</span>
-              <h2>CX Accelerator</h2>
-              <p class="services-engagement-desc">Ongoing operational oversight, analysis, technical guidance, and routine administration for production CX environments.</p>
-              <ul class="services-engagement-list">
-                <li>Recurring configuration and environment reviews</li>
-                <li>Production engagement and performance analysis</li>
-                <li>Identification of operational risks and optimization areas</li>
-                <li>Prioritized recommendations and action planning</li>
-                <li>Ongoing CX product and technical advisory</li>
-                <li>Support for qualifying configuration and administrative changes</li>
-              </ul>
+            <article class="services-engagement" id="optimize" aria-labelledby="optimize-heading" tabindex="-1">
+              <header class="services-summary">
+                <div>
+                  <span class="section-tag">CX Operations</span>
+                  <h2 id="optimize-heading">CX Accelerator Plans</h2>
+                </div>
+                <svg class="services-engagement-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#practice-icon-optimize"></use></svg>
+              </header>
+              <p class="services-engagement-desc">Ongoing administration and optimization of your production CX environments.</p>
+              <div class="services-scope">
+                <div>
+                  <h3>Operational Reviews</h3>
+                  <ul>
+                    <li>Check configurations for operational risks</li>
+                    <li>Review usage and performance</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Optimization &amp; Support</h3>
+                  <ul>
+                    <li>Prioritize improvements with a CX specialist</li>
+                    <li>Support eligible configuration and admin changes</li>
+                  </ul>
+                </div>
+              </div>
             </article>
-          </div>
-
-          <div class="services-scope-strip reveal-up">
-            <span class="services-eyebrow">How engagements are scoped</span>
-            <p>Every engagement defines what Agentix owns, what stays with your team, and what belongs with the platform vendor.</p>
           </div>
         </div>
       </section>
@@ -188,7 +264,7 @@
             <span class="section-tag">Start here</span>
             <h2>Let's design your <span class="hero-alt">next-generation CX</span></h2>
             <p>Start with a consultation to assess your current environment, define priorities, and identify where AI is useful.</p>
-            <a class="button button--primary button--booking" href="https://scheduler.zoom.us/agentix/30-min-meeting-with-agentix-deals-team" target="_blank" rel="noopener">Book a 30-minute consultation</a>
+            <a class="button button--primary button--booking" href="https://scheduler.zoom.us/agentix/30-min-meeting-with-agentix-deals-team" target="_blank" rel="noopener">Book a 30-Minute Consultation</a>
           </div>
         </div>
       </section>
@@ -199,9 +275,9 @@
         <span>© 2026 Agentix Technology Advisors</span>
         <div class="footer-links">
           <a href="/#difference">Why Agentix</a>
-          <a href="/#method">How we deliver</a>
+          <a href="/#method">How We Deliver</a>
           <a href="/services/">Services</a>
-          <a href="/about/">About us</a>
+          <a href="/about/">About Us</a>
           <a href="/contact/">Contact Us</a>
           <a href="tel:+14083596640">408-359-6640</a>
           <a href="mailto:info@agentixadvisors.com">info@agentixadvisors.com</a>
@@ -212,7 +288,7 @@
     </footer>
   </div>
 
-  <script src="/assets/js/main.js?v=20260925a"></script>
+  <script src="/assets/js/main.js?v=20261124m"></script>
 </body>
 
 </html>
