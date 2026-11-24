@@ -305,7 +305,6 @@ h3 {
   display: block;
   width: 1rem;
   height: 1px;
-  margin: 0.35rem auto;
   background: var(--header-text);
 }
 
@@ -371,6 +370,10 @@ h3 {
 .button--primary {
   background: var(--accent);
   color: #04121a;
+}
+
+.button--booking {
+  min-height: 44px;
 }
 
 .button--primary:hover,
@@ -1740,6 +1743,8 @@ h3 {
   .nav-toggle {
     order: 3;
     display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     width: 2.75rem;
@@ -1970,6 +1975,11 @@ h3 {
     width: 100%;
   }
 
+  .button--booking {
+    padding-inline: 12px;
+    letter-spacing: 0.035em;
+  }
+
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -1985,6 +1995,14 @@ h3 {
 
   .contact-actions .button {
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .button--booking {
+    padding-inline: 5px;
+    font-size: 14px;
+    letter-spacing: normal;
   }
 }
 
