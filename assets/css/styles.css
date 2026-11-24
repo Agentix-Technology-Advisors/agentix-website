@@ -636,30 +636,41 @@ h3 {
 }
 
 .delivery-principle {
+  display: grid;
+  max-width: 54rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
   scroll-margin-top: 110px;
-  margin-top: var(--heading-gap);
-  padding: clamp(20px, 2vw, 28px) var(--card-inset);
-  border-inline-start: 3px solid var(--accent);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: var(--heading-gap) auto 0;
+  padding: clamp(12px, 1.2vw, 18px) clamp(16px, 2vw, 24px);
+  border: 1px solid #bfd2da;
+  border-radius: var(--radius-sm);
   background:
-    linear-gradient(100deg, #e2eff2 42%, transparent),
+    linear-gradient(100deg, #fff 34%, rgba(246, 251, 252, .85) 64%, transparent),
     url("../images/hero-wide.svg") right center / auto 100% no-repeat,
-    #edf3f4;
-  color: #344f60;
-  font-size: clamp(16px, 1.4vw, 18px);
-  line-height: 1.5;
-  text-wrap: pretty;
+    #ddebf0;
+  text-wrap: balance;
 }
 
 .delivery-principle strong {
-  display: block;
-  margin-bottom: 6px;
   color: var(--text-dark);
-  font-size: clamp(21px, 2vw, 27px);
+  font-size: clamp(18px, 1.6vw, 21px);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.25;
-  text-wrap: balance;
+}
+
+.delivery-principle__close {
+  padding-inline-start: 18px;
+  border-inline-start: 2px solid var(--accent);
+  font: 500 clamp(17px, 1.5vw, 20px)/1.25 "Newsreader", Georgia, serif;
+  color: #225267;
+}
+
+@media (max-width: 820px) {
+  .delivery-principle { grid-template-columns: 1fr; gap: 6px; }
+  .delivery-principle__close { padding-inline-start: 12px; }
 }
 
 .why-grid {
