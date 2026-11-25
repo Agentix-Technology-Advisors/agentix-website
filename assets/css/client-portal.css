@@ -130,23 +130,6 @@
     color: #8f223f;
 }
 
-.portal-support-line {
-    margin: 2px 0 0;
-    font-size: 13px;
-    color: #5b697c;
-}
-
-.portal-support-line a {
-    color: #1f5f88;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
-.portal-support-line a:hover,
-.portal-support-line a:focus-visible {
-    color: var(--accent-deep);
-}
-
 .portal-content {
     margin-top: 18px;
 }

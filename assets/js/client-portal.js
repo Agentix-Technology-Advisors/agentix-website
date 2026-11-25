@@ -129,7 +129,7 @@ function setCapsLockWarning(isVisible) {
 function setLoginBusy(isBusy) {
     if (unlockButton) {
         unlockButton.disabled = isBusy;
-        unlockButton.textContent = isBusy ? "Unlocking..." : "Unlock portal";
+        unlockButton.textContent = isBusy ? "Unlocking..." : "Unlock Portal";
     }
 
     if (passwordInput) {
@@ -157,7 +157,7 @@ function setLoginLockedState(isFormLocked) {
     if (unlockButton) {
         unlockButton.disabled = isFormLocked;
         if (!isFormLocked) {
-            unlockButton.textContent = "Unlock portal";
+            unlockButton.textContent = "Unlock Portal";
         }
     }
 }
