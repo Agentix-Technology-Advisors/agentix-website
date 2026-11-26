@@ -2113,6 +2113,7 @@ h3 {
 @media (max-width: 640px) {
   :root { --section-space: 44px; --heading-gap: 24px; --card-inset: 20px; --page-gutter: 20px; }
   .leader-card { grid-template-columns: 1fr; padding: var(--card-inset); gap: 18px; }
+  .leader-card__photo { justify-self: center; }
   .home-page .problem-card h3 { min-height: auto; }
   .why-grid { row-gap: 28px; }
   .service-links {
